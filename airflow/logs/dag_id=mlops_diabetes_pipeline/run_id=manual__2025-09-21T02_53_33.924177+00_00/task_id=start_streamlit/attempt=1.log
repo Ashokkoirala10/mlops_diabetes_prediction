@@ -1,0 +1,29 @@
+[2025-09-21T08:40:08.657+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-21T08:40:08.664+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.start_streamlit manual__2025-09-21T02:53:33.924177+00:00 [queued]>
+[2025-09-21T08:40:08.667+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.start_streamlit manual__2025-09-21T02:53:33.924177+00:00 [queued]>
+[2025-09-21T08:40:08.667+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-21T08:40:08.680+0545] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): start_streamlit> on 2025-09-21 02:53:33.924177+00:00
+[2025-09-21T08:40:08.688+0545] {standard_task_runner.py:72} INFO - Started process 26267 to run task
+[2025-09-21T08:40:08.691+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'mlops_diabetes_pipeline', 'start_streamlit', 'manual__2025-09-21T02:53:33.924177+00:00', '--job-id', '712', '--raw', '--subdir', 'DAGS_FOLDER/mlops_diabetes_pipeline.py', '--cfg-path', '/tmp/tmp524f_d4h']
+[2025-09-21T08:40:08.691+0545] {standard_task_runner.py:105} INFO - Job 712: Subtask start_streamlit
+[2025-09-21T08:40:08.717+0545] {task_command.py:467} INFO - Running <TaskInstance: mlops_diabetes_pipeline.start_streamlit manual__2025-09-21T02:53:33.924177+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-21T08:40:08.760+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='koiralaashok02@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='mlops_diabetes_pipeline' AIRFLOW_CTX_TASK_ID='start_streamlit' AIRFLOW_CTX_EXECUTION_DATE='2025-09-21T02:53:33.924177+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-21T02:53:33.924177+00:00'
+[2025-09-21T08:40:08.761+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-21T08:40:08.761+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-21T08:40:08.761+0545] {logging_mixin.py:190} INFO - Current task name:start_streamlit state:running start_date:2025-09-21 02:55:08.664171+00:00
+[2025-09-21T08:40:08.761+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline and current dag run status:running
+[2025-09-21T08:40:08.761+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-21T08:40:08.762+0545] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-09-21T08:40:08.762+0545] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', '\n    cd /home/ashok/mlops_project\n    nohup conda run -n mysecondenvironment streamlit run streamlit_app.py --server.port 8501 > /tmp/streamlit.log 2>&1 < /dev/null &\n    sleep 5\n    if curl -s http://127.0.0.1:8501 | grep -q "<title>Streamlit"; then\n        echo "Streamlit started successfully"\n    else\n        echo "Streamlit failed to start"\n        cat /tmp/streamlit.log\n        exit 1\n    fi\n    ']
+[2025-09-21T08:40:08.779+0545] {subprocess.py:99} INFO - Output:
+[2025-09-21T08:40:13.792+0545] {subprocess.py:106} INFO - Streamlit started successfully
+[2025-09-21T08:40:13.792+0545] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-09-21T08:40:13.810+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-21T08:40:13.811+0545] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=mlops_diabetes_pipeline, task_id=start_streamlit, run_id=manual__2025-09-21T02:53:33.924177+00:00, execution_date=20250921T025333, start_date=20250921T025508, end_date=20250921T025513
+[2025-09-21T08:40:13.830+0545] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-21T08:40:13.830+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-21T08:40:13.831+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline queued_at:2025-09-21 02:53:33.931041+00:00
+[2025-09-21T08:40:13.831+0545] {logging_mixin.py:190} INFO - Task hostname:ashok-Nitro-ANV16-41 operator:BashOperator
+[2025-09-21T08:40:13.869+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-21T08:40:13.881+0545] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-21T08:40:13.881+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

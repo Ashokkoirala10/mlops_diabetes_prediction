@@ -1,0 +1,275 @@
+[2025-09-13T11:32:25.377+0545] {processor.py:186} INFO - Started process (PID=116429) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:32:25.378+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:32:25.379+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:32:25.379+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:32:27.258+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:32:27.257+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 44, in <module>
+    from monitoring.data_drift_monitor import monitor_data_drift
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:32:27.258+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:32:27.270+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.897 seconds
+[2025-09-13T11:33:24.041+0545] {processor.py:186} INFO - Started process (PID=117285) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:33:24.043+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:33:24.044+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:33:24.044+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:33:25.251+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:33:25.251+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 44, in <module>
+    from monitoring.data_drift_monitor import monitor_data_drift
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:33:25.252+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:33:25.267+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.231 seconds
+[2025-09-13T11:34:52.760+0545] {processor.py:186} INFO - Started process (PID=117912) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:34:52.762+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:34:52.764+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:34:52.763+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:34:54.090+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:34:54.089+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 44, in <module>
+    from monitoring.data_drift_monitor import monitor_data_drift
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:34:54.090+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:34:54.104+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.349 seconds
+[2025-09-13T11:35:51.195+0545] {processor.py:186} INFO - Started process (PID=118422) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:35:51.197+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:35:51.198+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:35:51.198+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:35:52.405+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:35:52.405+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 44, in <module>
+    from monitoring.data_drift_monitor import monitor_data_drift
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:35:52.405+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:35:52.422+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.230 seconds
+[2025-09-13T11:36:42.669+0545] {processor.py:186} INFO - Started process (PID=118753) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:36:42.671+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:36:42.673+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:36:42.672+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:36:43.976+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:36:43.975+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 44, in <module>
+    from monitoring.data_drift_monitor import monitor_data_drift
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:36:43.976+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:36:43.990+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.324 seconds
+[2025-09-13T11:37:38.073+0545] {processor.py:186} INFO - Started process (PID=119100) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:37:38.075+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:37:38.076+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:37:38.076+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:37:39.364+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:37:39.364+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 44, in <module>
+    from monitoring.data_drift_monitor import monitor_data_drift
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:37:39.365+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:37:39.378+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.310 seconds
+[2025-09-13T11:38:32.939+0545] {processor.py:186} INFO - Started process (PID=119449) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:38:32.940+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:38:32.942+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:38:32.942+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:38:34.139+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:38:34.139+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 44, in <module>
+    from monitoring.data_drift_monitor import monitor_data_drift
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:38:34.140+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:38:34.156+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.221 seconds
+[2025-09-13T11:39:31.662+0545] {processor.py:186} INFO - Started process (PID=119832) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:39:31.664+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:39:31.665+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:39:31.665+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:39:32.964+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:39:32.964+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 44, in <module>
+    from monitoring.data_drift_monitor import monitor_data_drift
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:39:32.965+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:39:32.977+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.319 seconds
+[2025-09-13T11:40:24.250+0545] {processor.py:186} INFO - Started process (PID=120163) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:40:24.252+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:40:24.253+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:40:24.253+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:40:25.479+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:40:25.479+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 44, in <module>
+    from monitoring.data_drift_monitor import monitor_data_drift
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:40:25.480+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:40:25.496+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.249 seconds
+[2025-09-13T11:40:49.989+0545] {processor.py:186} INFO - Started process (PID=120337) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:40:49.989+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:40:49.991+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:40:49.990+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:40:51.215+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:40:51.214+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 52, in <module>
+    from monitoring.data_drift_monitor import monitor_data_drift
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:40:51.215+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:40:51.228+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.243 seconds
+[2025-09-13T11:41:19.619+0545] {processor.py:186} INFO - Started process (PID=120531) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:41:19.621+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:41:19.622+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:41:19.622+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:41:20.889+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:41:20.888+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 46, in <module>
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:41:20.889+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:41:20.900+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.285 seconds
+[2025-09-13T11:41:44.621+0545] {processor.py:186} INFO - Started process (PID=120726) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:41:44.621+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:41:44.623+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:41:44.622+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:41:45.865+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:41:45.864+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 47, in <module>
+    from monitoring.data_drift_monitor import monitor_data_drift
+ModuleNotFoundError: No module named 'monitoring'
+[2025-09-13T11:41:45.865+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:41:45.879+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.263 seconds
+[2025-09-13T11:42:40.820+0545] {processor.py:186} INFO - Started process (PID=121201) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:42:40.822+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:42:40.823+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:40.823+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:42:42.271+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:42.271+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/analyzers/__init__.py:3: UserWarning: analyzers are deprecated, use metrics instead
+  warnings.warn("analyzers are deprecated, use metrics instead")
+[2025-09-13T11:42:42.489+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:42.489+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/dashboard/__init__.py:8: UserWarning:
+
+dashboards are deprecated, use metrics instead
+[2025-09-13T11:42:42.493+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:42.493+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/model_profile/__init__.py:8: UserWarning:
+
+model profiles are deprecated, use metrics instead
+[2025-09-13T11:42:42.496+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:42.495+0545] {warnings.py:109} WARNING - /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py:562: RemovedInAirflow3Warning:
+
+Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2025-09-13T11:42:42.500+0545] {processor.py:925} INFO - DAG(s) 'mlops_diabetes_pipeline' retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:42:42.546+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:42.545+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-13T11:42:42.555+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:42.555+0545] {dag.py:4180} INFO - Setting next_dagrun for mlops_diabetes_pipeline to 2025-09-01 00:00:00+00:00, run_after=2025-10-01 00:00:00+00:00
+[2025-09-13T11:42:42.580+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.764 seconds
+[2025-09-13T11:42:46.648+0545] {processor.py:186} INFO - Started process (PID=121265) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:42:46.649+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:42:46.650+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:46.650+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:42:47.893+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:47.893+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/analyzers/__init__.py:3: UserWarning: analyzers are deprecated, use metrics instead
+  warnings.warn("analyzers are deprecated, use metrics instead")
+[2025-09-13T11:42:47.984+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:47.984+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/dashboard/__init__.py:8: UserWarning:
+
+dashboards are deprecated, use metrics instead
+[2025-09-13T11:42:47.985+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:47.985+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/model_profile/__init__.py:8: UserWarning:
+
+model profiles are deprecated, use metrics instead
+[2025-09-13T11:42:47.987+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:47.987+0545] {warnings.py:109} WARNING - /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py:562: RemovedInAirflow3Warning:
+
+Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2025-09-13T11:42:47.990+0545] {processor.py:925} INFO - DAG(s) 'mlops_diabetes_pipeline' retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:42:47.993+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:47.993+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-13T11:42:48.001+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:42:48.001+0545] {dag.py:4180} INFO - Setting next_dagrun for mlops_diabetes_pipeline to 2025-09-01 00:00:00+00:00, run_after=2025-10-01 00:00:00+00:00
+[2025-09-13T11:42:48.014+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.369 seconds
+[2025-09-13T11:44:55.733+0545] {processor.py:186} INFO - Started process (PID=123474) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:44:55.735+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:44:55.736+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:44:55.736+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:44:56.956+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:44:56.955+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/analyzers/__init__.py:3: UserWarning: analyzers are deprecated, use metrics instead
+  warnings.warn("analyzers are deprecated, use metrics instead")
+[2025-09-13T11:44:57.047+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:44:57.047+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/dashboard/__init__.py:8: UserWarning:
+
+dashboards are deprecated, use metrics instead
+[2025-09-13T11:44:57.048+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:44:57.048+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/model_profile/__init__.py:8: UserWarning:
+
+model profiles are deprecated, use metrics instead
+[2025-09-13T11:44:57.049+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:44:57.049+0545] {warnings.py:109} WARNING - /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py:562: RemovedInAirflow3Warning:
+
+Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2025-09-13T11:44:57.053+0545] {processor.py:925} INFO - DAG(s) 'mlops_diabetes_pipeline' retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:44:57.059+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:44:57.059+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-13T11:44:57.066+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:44:57.066+0545] {dag.py:4180} INFO - Setting next_dagrun for mlops_diabetes_pipeline to 2025-09-01 00:00:00+00:00, run_after=2025-10-01 00:00:00+00:00
+[2025-09-13T11:44:57.085+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.356 seconds
+[2025-09-13T11:45:49.736+0545] {processor.py:186} INFO - Started process (PID=123843) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:45:49.739+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:45:49.740+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:45:49.740+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:45:50.953+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:45:50.952+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/analyzers/__init__.py:3: UserWarning: analyzers are deprecated, use metrics instead
+  warnings.warn("analyzers are deprecated, use metrics instead")
+[2025-09-13T11:45:51.049+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:45:51.048+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/dashboard/__init__.py:8: UserWarning:
+
+dashboards are deprecated, use metrics instead
+[2025-09-13T11:45:51.050+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:45:51.049+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/model_profile/__init__.py:8: UserWarning:
+
+model profiles are deprecated, use metrics instead
+[2025-09-13T11:45:51.051+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:45:51.051+0545] {warnings.py:109} WARNING - /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py:562: RemovedInAirflow3Warning:
+
+Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2025-09-13T11:45:51.054+0545] {processor.py:925} INFO - DAG(s) 'mlops_diabetes_pipeline' retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:45:51.061+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:45:51.061+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-13T11:45:51.068+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:45:51.068+0545] {dag.py:4180} INFO - Setting next_dagrun for mlops_diabetes_pipeline to 2025-09-01 00:00:00+00:00, run_after=2025-10-01 00:00:00+00:00
+[2025-09-13T11:45:51.086+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.353 seconds
+[2025-09-13T11:46:41.267+0545] {processor.py:186} INFO - Started process (PID=124369) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:46:41.269+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:46:41.271+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:46:41.270+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:46:42.503+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:46:42.503+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/analyzers/__init__.py:3: UserWarning: analyzers are deprecated, use metrics instead
+  warnings.warn("analyzers are deprecated, use metrics instead")
+[2025-09-13T11:46:42.592+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:46:42.592+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/dashboard/__init__.py:8: UserWarning:
+
+dashboards are deprecated, use metrics instead
+[2025-09-13T11:46:42.593+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:46:42.593+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/model_profile/__init__.py:8: UserWarning:
+
+model profiles are deprecated, use metrics instead
+[2025-09-13T11:46:42.595+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:46:42.595+0545] {warnings.py:109} WARNING - /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py:562: RemovedInAirflow3Warning:
+
+Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2025-09-13T11:46:42.598+0545] {processor.py:925} INFO - DAG(s) 'mlops_diabetes_pipeline' retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:46:42.604+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:46:42.604+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-13T11:46:42.611+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:46:42.611+0545] {dag.py:4180} INFO - Setting next_dagrun for mlops_diabetes_pipeline to 2025-09-01 00:00:00+00:00, run_after=2025-10-01 00:00:00+00:00
+[2025-09-13T11:46:42.629+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.365 seconds
+[2025-09-13T11:47:32.540+0545] {processor.py:186} INFO - Started process (PID=124870) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:47:32.541+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-13T11:47:32.543+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:47:32.543+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:47:33.914+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:47:33.913+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/analyzers/__init__.py:3: UserWarning: analyzers are deprecated, use metrics instead
+  warnings.warn("analyzers are deprecated, use metrics instead")
+[2025-09-13T11:47:34.019+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:47:34.019+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/dashboard/__init__.py:8: UserWarning:
+
+dashboards are deprecated, use metrics instead
+[2025-09-13T11:47:34.020+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:47:34.020+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/model_profile/__init__.py:8: UserWarning:
+
+model profiles are deprecated, use metrics instead
+[2025-09-13T11:47:34.022+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:47:34.022+0545] {warnings.py:109} WARNING - /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py:562: RemovedInAirflow3Warning:
+
+Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2025-09-13T11:47:34.025+0545] {processor.py:925} INFO - DAG(s) 'mlops_diabetes_pipeline' retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-13T11:47:34.033+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:47:34.033+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-13T11:47:34.043+0545] {logging_mixin.py:190} INFO - [2025-09-13T11:47:34.043+0545] {dag.py:4180} INFO - Setting next_dagrun for mlops_diabetes_pipeline to 2025-09-01 00:00:00+00:00, run_after=2025-10-01 00:00:00+00:00
+[2025-09-13T11:47:34.059+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.523 seconds

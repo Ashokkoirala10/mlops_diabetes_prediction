@@ -1,0 +1,28 @@
+[2025-09-04T14:12:05.415+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-04T14:12:05.421+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: start_diabetes_stack.start_mlflow manual__2025-09-04T08:26:55.785776+00:00 [queued]>
+[2025-09-04T14:12:05.424+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: start_diabetes_stack.start_mlflow manual__2025-09-04T08:26:55.785776+00:00 [queued]>
+[2025-09-04T14:12:05.424+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-04T14:12:05.437+0545] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): start_mlflow> on 2025-09-04 08:26:55.785776+00:00
+[2025-09-04T14:12:05.442+0545] {standard_task_runner.py:72} INFO - Started process 37661 to run task
+[2025-09-04T14:12:05.446+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'start_diabetes_stack', 'start_mlflow', 'manual__2025-09-04T08:26:55.785776+00:00', '--job-id', '201', '--raw', '--subdir', 'DAGS_FOLDER/bash_operator.py', '--cfg-path', '/tmp/tmpz4v1gnte']
+[2025-09-04T14:12:05.447+0545] {standard_task_runner.py:105} INFO - Job 201: Subtask start_mlflow
+[2025-09-04T14:12:05.473+0545] {task_command.py:467} INFO - Running <TaskInstance: start_diabetes_stack.start_mlflow manual__2025-09-04T08:26:55.785776+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-04T14:12:05.512+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ashok' AIRFLOW_CTX_DAG_ID='start_diabetes_stack' AIRFLOW_CTX_TASK_ID='start_mlflow' AIRFLOW_CTX_EXECUTION_DATE='2025-09-04T08:26:55.785776+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-04T08:26:55.785776+00:00'
+[2025-09-04T14:12:05.513+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-04T14:12:05.513+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-04T14:12:05.513+0545] {logging_mixin.py:190} INFO - Current task name:start_mlflow state:running start_date:2025-09-04 08:27:05.421663+00:00
+[2025-09-04T14:12:05.513+0545] {logging_mixin.py:190} INFO - Dag name:start_diabetes_stack and current dag run status:running
+[2025-09-04T14:12:05.513+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-04T14:12:05.514+0545] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-09-04T14:12:05.514+0545] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'nohup conda run -n mysecondenvironment mlflow ui --port 5000 >/tmp/mlflow.log 2>&1 &']
+[2025-09-04T14:12:05.523+0545] {subprocess.py:99} INFO - Output:
+[2025-09-04T14:12:05.524+0545] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-09-04T14:12:05.541+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-04T14:12:05.541+0545] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=start_diabetes_stack, task_id=start_mlflow, run_id=manual__2025-09-04T08:26:55.785776+00:00, execution_date=20250904T082655, start_date=20250904T082705, end_date=20250904T082705
+[2025-09-04T14:12:05.559+0545] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-04T14:12:05.559+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-04T14:12:05.559+0545] {logging_mixin.py:190} INFO - Dag name:start_diabetes_stack queued_at:2025-09-04 08:26:55.797699+00:00
+[2025-09-04T14:12:05.559+0545] {logging_mixin.py:190} INFO - Task hostname:ashok-Nitro-ANV16-41 operator:BashOperator
+[2025-09-04T14:12:05.577+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-04T14:12:05.584+0545] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-04T14:12:05.584+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

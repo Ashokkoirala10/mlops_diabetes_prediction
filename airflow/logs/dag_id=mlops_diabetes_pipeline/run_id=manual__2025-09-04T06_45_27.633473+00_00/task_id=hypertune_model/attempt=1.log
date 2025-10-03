@@ -1,0 +1,26 @@
+[2025-09-04T12:30:55.923+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-04T12:30:55.928+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.hypertune_model manual__2025-09-04T06:45:27.633473+00:00 [queued]>
+[2025-09-04T12:30:55.931+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.hypertune_model manual__2025-09-04T06:45:27.633473+00:00 [queued]>
+[2025-09-04T12:30:55.931+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-04T12:30:55.944+0545] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): hypertune_model> on 2025-09-04 06:45:27.633473+00:00
+[2025-09-04T12:30:55.953+0545] {standard_task_runner.py:72} INFO - Started process 76744 to run task
+[2025-09-04T12:30:55.956+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'mlops_diabetes_pipeline', 'hypertune_model', 'manual__2025-09-04T06:45:27.633473+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/mlops_diabetes_pipeline.py', '--cfg-path', '/tmp/tmpwzsb2cb4']
+[2025-09-04T12:30:55.956+0545] {standard_task_runner.py:105} INFO - Job 73: Subtask hypertune_model
+[2025-09-04T12:30:55.983+0545] {task_command.py:467} INFO - Running <TaskInstance: mlops_diabetes_pipeline.hypertune_model manual__2025-09-04T06:45:27.633473+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-04T12:30:56.025+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='koiralaashok02@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='mlops_diabetes_pipeline' AIRFLOW_CTX_TASK_ID='hypertune_model' AIRFLOW_CTX_EXECUTION_DATE='2025-09-04T06:45:27.633473+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-04T06:45:27.633473+00:00'
+[2025-09-04T12:30:56.026+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-04T12:30:56.026+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-04T12:30:56.026+0545] {logging_mixin.py:190} INFO - Current task name:hypertune_model state:running start_date:2025-09-04 06:45:55.928878+00:00
+[2025-09-04T12:30:56.026+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline and current dag run status:running
+[2025-09-04T12:30:56.026+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-04T12:30:59.911+0545] {logging_mixin.py:190} INFO - Hypertuned model. Acc=0.748, F1=0.747
+[2025-09-04T12:30:59.938+0545] {python.py:240} INFO - Done. Returned value was: Hypertuning complete and saved to Redis
+[2025-09-04T12:30:59.952+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-04T12:30:59.953+0545] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=mlops_diabetes_pipeline, task_id=hypertune_model, run_id=manual__2025-09-04T06:45:27.633473+00:00, execution_date=20250904T064527, start_date=20250904T064555, end_date=20250904T064559
+[2025-09-04T12:30:59.973+0545] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-04T12:30:59.973+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-04T12:30:59.974+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline queued_at:2025-09-04 06:45:27.642027+00:00
+[2025-09-04T12:30:59.974+0545] {logging_mixin.py:190} INFO - Task hostname:ashok-Nitro-ANV16-41 operator:PythonOperator
+[2025-09-04T12:31:00.018+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-04T12:31:00.032+0545] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-04T12:31:00.039+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

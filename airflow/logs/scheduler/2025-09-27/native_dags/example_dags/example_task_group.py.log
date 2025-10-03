@@ -1,0 +1,42 @@
+[2025-09-27T10:16:54.437+0545] {processor.py:186} INFO - Started process (PID=25498) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:16:54.438+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-09-27T10:16:54.440+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:16:54.440+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:16:54.446+0545] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:16:54.464+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:16:54.464+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-27T10:16:54.474+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:16:54.474+0545] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-09-27T10:16:54.497+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py took 0.066 seconds
+[2025-09-27T10:20:10.817+0545] {processor.py:186} INFO - Started process (PID=28943) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:20:10.819+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-09-27T10:20:10.822+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:20:10.822+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:20:10.832+0545] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:20:10.852+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:20:10.852+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-27T10:20:10.867+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:20:10.866+0545] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-09-27T10:20:10.897+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py took 0.088 seconds
+[2025-09-27T10:21:11.266+0545] {processor.py:186} INFO - Started process (PID=29343) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:21:11.268+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-09-27T10:21:11.273+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:21:11.272+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:21:11.283+0545] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:21:11.306+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:21:11.306+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-27T10:21:11.321+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:21:11.321+0545] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-09-27T10:21:11.351+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py took 0.093 seconds
+[2025-09-27T10:22:16.663+0545] {processor.py:186} INFO - Started process (PID=29808) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:22:16.665+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-09-27T10:22:16.668+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:22:16.667+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:22:16.681+0545] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:22:16.701+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:22:16.700+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-27T10:22:16.711+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:22:16.711+0545] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-09-27T10:22:16.736+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py took 0.080 seconds
+[2025-09-27T10:38:17.904+0545] {processor.py:186} INFO - Started process (PID=38844) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:38:17.907+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-09-27T10:38:17.909+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:38:17.909+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:38:17.916+0545] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:38:17.933+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:38:17.933+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-27T10:38:17.941+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:38:17.940+0545] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-09-27T10:38:17.959+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py took 0.059 seconds
+[2025-09-27T10:41:47.113+0545] {processor.py:186} INFO - Started process (PID=42548) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:41:47.116+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-09-27T10:41:47.118+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:41:47.117+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:41:47.123+0545] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-27T10:41:47.134+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:41:47.134+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-27T10:41:47.142+0545] {logging_mixin.py:190} INFO - [2025-09-27T10:41:47.142+0545] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-09-27T10:41:47.165+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py took 0.057 seconds

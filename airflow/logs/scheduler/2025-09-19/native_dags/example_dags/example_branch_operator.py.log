@@ -1,0 +1,5 @@
+[2025-09-19T15:48:46.140+0545] {processor.py:186} INFO - Started process (PID=13979) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-09-19T15:48:46.141+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2025-09-19T15:48:46.143+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:46.143+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-09-19T15:48:46.145+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-09-19T15:48:46.154+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py took 0.017 seconds

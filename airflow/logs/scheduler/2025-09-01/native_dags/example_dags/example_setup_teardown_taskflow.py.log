@@ -1,0 +1,22 @@
+[2025-09-01T20:39:37.715+0545] {processor.py:186} INFO - Started process (PID=150250) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2025-09-01T20:39:37.717+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py for tasks to queue
+[2025-09-01T20:39:37.720+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:37.719+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2025-09-01T20:39:37.734+0545] {processor.py:925} INFO - DAG(s) 'example_setup_teardown_taskflow' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2025-09-01T20:39:37.864+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:37.863+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_setup_teardown_taskflow
+[2025-09-01T20:39:37.883+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:37.882+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_setup_teardown_taskflow
+[2025-09-01T20:39:37.899+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:37.898+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_setup_teardown_taskflow
+[2025-09-01T20:39:37.924+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:37.924+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_setup_teardown_taskflow
+[2025-09-01T20:39:37.940+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:37.939+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_setup_teardown_taskflow
+[2025-09-01T20:39:37.953+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:37.953+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_setup_teardown_taskflow
+[2025-09-01T20:39:37.968+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:37.967+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_setup_teardown_taskflow
+[2025-09-01T20:39:37.968+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:37.968+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:39:37.981+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:37.980+0545] {dag.py:3262} INFO - Creating ORM DAG for example_setup_teardown_taskflow
+[2025-09-01T20:39:37.981+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:37.981+0545] {dag.py:4180} INFO - Setting next_dagrun for example_setup_teardown_taskflow to None, run_after=None
+[2025-09-01T20:39:38.006+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py took 0.302 seconds
+[2025-09-01T20:40:49.337+0545] {processor.py:186} INFO - Started process (PID=151218) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2025-09-01T20:40:49.339+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py for tasks to queue
+[2025-09-01T20:40:49.341+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:49.341+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2025-09-01T20:40:49.351+0545] {processor.py:925} INFO - DAG(s) 'example_setup_teardown_taskflow' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2025-09-01T20:40:49.368+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:49.367+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:49.379+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:49.378+0545] {dag.py:4180} INFO - Setting next_dagrun for example_setup_teardown_taskflow to None, run_after=None
+[2025-09-01T20:40:49.402+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py took 0.072 seconds

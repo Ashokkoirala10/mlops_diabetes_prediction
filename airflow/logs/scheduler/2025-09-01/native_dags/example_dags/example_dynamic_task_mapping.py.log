@@ -1,0 +1,15 @@
+[2025-09-01T20:40:07.129+0545] {processor.py:186} INFO - Started process (PID=150655) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-09-01T20:40:07.130+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2025-09-01T20:40:07.134+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:07.133+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-09-01T20:40:07.146+0545] {processor.py:925} INFO - DAG(s) 'example_dynamic_task_mapping' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-09-01T20:40:07.264+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:07.263+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_dynamic_task_mapping
+[2025-09-01T20:40:07.281+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:07.280+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_dynamic_task_mapping
+[2025-09-01T20:40:07.296+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:07.295+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_dynamic_task_mapping
+[2025-09-01T20:40:07.320+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:07.319+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_dynamic_task_mapping
+[2025-09-01T20:40:07.335+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:07.334+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_dynamic_task_mapping
+[2025-09-01T20:40:07.348+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:07.347+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_dynamic_task_mapping
+[2025-09-01T20:40:07.361+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:07.360+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_dynamic_task_mapping
+[2025-09-01T20:40:07.362+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:07.362+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:07.374+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:07.373+0545] {dag.py:3262} INFO - Creating ORM DAG for example_dynamic_task_mapping
+[2025-09-01T20:40:07.374+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:07.374+0545] {dag.py:4180} INFO - Setting next_dagrun for example_dynamic_task_mapping to None, run_after=None
+[2025-09-01T20:40:07.399+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.278 seconds

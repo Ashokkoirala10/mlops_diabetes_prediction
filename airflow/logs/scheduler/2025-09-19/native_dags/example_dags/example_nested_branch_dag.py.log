@@ -1,0 +1,7 @@
+[2025-09-19T15:48:30.602+0545] {processor.py:186} INFO - Started process (PID=13844) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-09-19T15:48:30.602+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2025-09-19T15:48:30.603+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:30.603+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-09-19T15:48:30.611+0545] {processor.py:925} INFO - DAG(s) 'example_nested_branch_dag' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-09-19T15:48:30.623+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:30.623+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-19T15:48:30.633+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:30.633+0545] {dag.py:4180} INFO - Setting next_dagrun for example_nested_branch_dag to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-19T15:48:30.652+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.054 seconds

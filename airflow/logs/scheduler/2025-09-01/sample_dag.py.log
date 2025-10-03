@@ -1,0 +1,29 @@
+[2025-09-01T20:39:16.182+0545] {processor.py:186} INFO - Started process (PID=149859) to work on /home/ashok/mlops_project/airflow/dags/sample_dag.py
+[2025-09-01T20:39:16.182+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/sample_dag.py for tasks to queue
+[2025-09-01T20:39:16.184+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:16.184+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/sample_dag.py
+[2025-09-01T20:39:16.196+0545] {processor.py:925} INFO - DAG(s) 'sample_mlops_dag' retrieved from /home/ashok/mlops_project/airflow/dags/sample_dag.py
+[2025-09-01T20:39:16.262+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:16.261+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:sample_mlops_dag
+[2025-09-01T20:39:16.274+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:16.274+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:sample_mlops_dag
+[2025-09-01T20:39:16.286+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:16.285+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:sample_mlops_dag
+[2025-09-01T20:39:16.304+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:16.304+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:sample_mlops_dag
+[2025-09-01T20:39:16.316+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:16.315+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:sample_mlops_dag
+[2025-09-01T20:39:16.327+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:16.327+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:sample_mlops_dag
+[2025-09-01T20:39:16.337+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:16.337+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:sample_mlops_dag
+[2025-09-01T20:39:16.338+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:16.337+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:39:16.348+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:16.347+0545] {dag.py:3262} INFO - Creating ORM DAG for sample_mlops_dag
+[2025-09-01T20:39:16.356+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:16.355+0545] {dag.py:4180} INFO - Setting next_dagrun for sample_mlops_dag to 2025-09-01 00:00:00+00:00, run_after=2025-09-02 00:00:00+00:00
+[2025-09-01T20:39:16.377+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/sample_dag.py took 0.200 seconds
+[2025-09-01T20:40:27.626+0545] {processor.py:186} INFO - Started process (PID=150966) to work on /home/ashok/mlops_project/airflow/dags/sample_dag.py
+[2025-09-01T20:40:27.629+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/sample_dag.py for tasks to queue
+[2025-09-01T20:40:27.632+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:27.631+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/sample_dag.py
+[2025-09-01T20:40:27.643+0545] {processor.py:925} INFO - DAG(s) 'sample_mlops_dag' retrieved from /home/ashok/mlops_project/airflow/dags/sample_dag.py
+[2025-09-01T20:40:27.663+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:27.662+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:27.683+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:27.683+0545] {dag.py:4180} INFO - Setting next_dagrun for sample_mlops_dag to 2025-09-01 00:00:00+00:00, run_after=2025-09-02 00:00:00+00:00
+[2025-09-01T20:40:27.709+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/sample_dag.py took 0.091 seconds
+[2025-09-01T20:44:31.852+0545] {processor.py:186} INFO - Started process (PID=153525) to work on /home/ashok/mlops_project/airflow/dags/sample_dag.py
+[2025-09-01T20:44:31.853+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/sample_dag.py for tasks to queue
+[2025-09-01T20:44:31.855+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:31.854+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/sample_dag.py
+[2025-09-01T20:44:31.866+0545] {processor.py:925} INFO - DAG(s) 'sample_mlops_dag' retrieved from /home/ashok/mlops_project/airflow/dags/sample_dag.py
+[2025-09-01T20:44:31.877+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:31.877+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:44:31.888+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:31.888+0545] {dag.py:4180} INFO - Setting next_dagrun for sample_mlops_dag to 2025-09-01 00:00:00+00:00, run_after=2025-09-02 00:00:00+00:00
+[2025-09-01T20:44:31.907+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/sample_dag.py took 0.058 seconds

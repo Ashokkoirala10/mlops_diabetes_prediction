@@ -1,0 +1,58 @@
+[2025-09-01T17:22:30.264+0545] {processor.py:186} INFO - Started process (PID=80748) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T17:22:30.265+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2025-09-01T17:22:30.266+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.266+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T17:22:30.282+0545] {processor.py:925} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T17:22:30.346+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.345+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_subdag_operator
+[2025-09-01T17:22:30.358+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.358+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_subdag_operator
+[2025-09-01T17:22:30.368+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.368+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_subdag_operator
+[2025-09-01T17:22:30.387+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.387+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_subdag_operator
+[2025-09-01T17:22:30.398+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.398+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_subdag_operator
+[2025-09-01T17:22:30.409+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.409+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_subdag_operator
+[2025-09-01T17:22:30.419+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.419+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_subdag_operator
+[2025-09-01T17:22:30.420+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.419+0545] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-09-01T17:22:30.428+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.428+0545] {dag.py:3262} INFO - Creating ORM DAG for example_subdag_operator
+[2025-09-01T17:22:30.428+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.428+0545] {dag.py:3262} INFO - Creating ORM DAG for example_subdag_operator.section-2
+[2025-09-01T17:22:30.428+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.428+0545] {dag.py:3262} INFO - Creating ORM DAG for example_subdag_operator.section-1
+[2025-09-01T17:22:30.434+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.434+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2025-09-01T17:22:30.434+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.434+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2025-09-01T17:22:30.434+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.434+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2025-09-01T17:22:30.439+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.439+0545] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-09-01T17:22:30.441+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.441+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2025-09-01T17:22:30.541+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:30.540+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2025-09-01T17:22:30.557+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.297 seconds
+[2025-09-01T20:39:31.155+0545] {processor.py:186} INFO - Started process (PID=150168) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T20:39:31.157+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2025-09-01T20:39:31.159+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:31.159+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T20:39:31.181+0545] {processor.py:925} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T20:39:31.202+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:31.201+0545] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-09-01T20:39:31.225+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:31.225+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2025-09-01T20:39:31.228+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:31.228+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2025-09-01T20:39:31.229+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:31.229+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2025-09-01T20:39:31.235+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:31.235+0545] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-09-01T20:39:31.240+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:31.239+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2025-09-01T20:39:31.240+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:31.240+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2025-09-01T20:39:31.257+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.108 seconds
+[2025-09-01T20:40:42.917+0545] {processor.py:186} INFO - Started process (PID=151148) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T20:40:42.920+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2025-09-01T20:40:42.923+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:42.922+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T20:40:42.948+0545] {processor.py:925} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T20:40:42.963+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:42.963+0545] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-09-01T20:40:42.983+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:42.982+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2025-09-01T20:40:42.986+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:42.986+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2025-09-01T20:40:42.987+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:42.987+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2025-09-01T20:40:42.992+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:42.992+0545] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-09-01T20:40:42.996+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:42.996+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2025-09-01T20:40:42.996+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:42.996+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2025-09-01T20:40:43.017+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.107 seconds
+[2025-09-01T20:44:47.127+0545] {processor.py:186} INFO - Started process (PID=153822) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T20:44:47.130+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2025-09-01T20:44:47.132+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:47.132+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T20:44:47.159+0545] {processor.py:925} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-09-01T20:44:47.178+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:47.178+0545] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-09-01T20:44:47.203+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:47.203+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2025-09-01T20:44:47.207+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:47.206+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2025-09-01T20:44:47.208+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:47.208+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2025-09-01T20:44:47.214+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:47.214+0545] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-09-01T20:44:47.219+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:47.219+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2025-09-01T20:44:47.219+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:47.219+0545] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2025-09-01T20:44:47.237+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.118 seconds

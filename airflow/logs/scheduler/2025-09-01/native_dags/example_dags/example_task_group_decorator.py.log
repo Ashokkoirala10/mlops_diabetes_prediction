@@ -1,0 +1,22 @@
+[2025-09-01T20:39:36.326+0545] {processor.py:186} INFO - Started process (PID=150231) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-09-01T20:39:36.327+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2025-09-01T20:39:36.329+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.329+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-09-01T20:39:36.346+0545] {processor.py:925} INFO - DAG(s) 'example_task_group_decorator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-09-01T20:39:36.469+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.468+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_task_group_decorator
+[2025-09-01T20:39:36.488+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.488+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_task_group_decorator
+[2025-09-01T20:39:36.504+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.504+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_task_group_decorator
+[2025-09-01T20:39:36.532+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.531+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_task_group_decorator
+[2025-09-01T20:39:36.545+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.544+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_task_group_decorator
+[2025-09-01T20:39:36.559+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.559+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_task_group_decorator
+[2025-09-01T20:39:36.574+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.573+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_task_group_decorator
+[2025-09-01T20:39:36.574+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.574+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:39:36.587+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.587+0545] {dag.py:3262} INFO - Creating ORM DAG for example_task_group_decorator
+[2025-09-01T20:39:36.588+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.588+0545] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
+[2025-09-01T20:39:36.613+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.295 seconds
+[2025-09-01T20:40:48.095+0545] {processor.py:186} INFO - Started process (PID=151206) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-09-01T20:40:48.098+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2025-09-01T20:40:48.102+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:48.101+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-09-01T20:40:48.120+0545] {processor.py:925} INFO - DAG(s) 'example_task_group_decorator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-09-01T20:40:48.146+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:48.145+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:48.160+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:48.160+0545] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
+[2025-09-01T20:40:48.187+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.101 seconds

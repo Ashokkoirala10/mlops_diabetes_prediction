@@ -1,0 +1,24 @@
+[2025-09-01T20:39:41.713+0545] {processor.py:186} INFO - Started process (PID=150307) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_python_decorator.py
+[2025-09-01T20:39:41.714+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_python_decorator.py for tasks to queue
+[2025-09-01T20:39:41.718+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:41.717+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_python_decorator.py
+[2025-09-01T20:39:41.730+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:41.730+0545] {example_python_decorator.py:80} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2025-09-01T20:39:41.733+0545] {processor.py:925} INFO - DAG(s) 'example_python_decorator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_python_decorator.py
+[2025-09-01T20:39:41.881+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:41.880+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_python_decorator
+[2025-09-01T20:39:41.900+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:41.899+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_python_decorator
+[2025-09-01T20:39:41.915+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:41.914+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_python_decorator
+[2025-09-01T20:39:41.941+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:41.940+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_python_decorator
+[2025-09-01T20:39:41.955+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:41.954+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_python_decorator
+[2025-09-01T20:39:41.969+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:41.968+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_python_decorator
+[2025-09-01T20:39:41.983+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:41.983+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_python_decorator
+[2025-09-01T20:39:41.984+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:41.984+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:39:42.000+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:41.999+0545] {dag.py:3262} INFO - Creating ORM DAG for example_python_decorator
+[2025-09-01T20:39:42.001+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:42.001+0545] {dag.py:4180} INFO - Setting next_dagrun for example_python_decorator to None, run_after=None
+[2025-09-01T20:39:42.027+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_python_decorator.py took 0.325 seconds
+[2025-09-01T20:40:50.932+0545] {processor.py:186} INFO - Started process (PID=151241) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_python_decorator.py
+[2025-09-01T20:40:50.934+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_python_decorator.py for tasks to queue
+[2025-09-01T20:40:50.937+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:50.937+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_python_decorator.py
+[2025-09-01T20:40:50.947+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:50.947+0545] {example_python_decorator.py:80} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2025-09-01T20:40:50.950+0545] {processor.py:925} INFO - DAG(s) 'example_python_decorator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_python_decorator.py
+[2025-09-01T20:40:50.967+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:50.967+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:50.979+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:50.978+0545] {dag.py:4180} INFO - Setting next_dagrun for example_python_decorator to None, run_after=None
+[2025-09-01T20:40:51.004+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_python_decorator.py took 0.079 seconds

@@ -1,0 +1,29 @@
+[2025-09-10T11:33:05.806+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-10T11:33:05.813+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.start_docker manual__2025-09-10T05:47:54.321048+00:00 [queued]>
+[2025-09-10T11:33:05.817+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.start_docker manual__2025-09-10T05:47:54.321048+00:00 [queued]>
+[2025-09-10T11:33:05.817+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-10T11:33:05.829+0545] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): start_docker> on 2025-09-10 05:47:54.321048+00:00
+[2025-09-10T11:33:05.837+0545] {standard_task_runner.py:72} INFO - Started process 68092 to run task
+[2025-09-10T11:33:05.841+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'mlops_diabetes_pipeline', 'start_docker', 'manual__2025-09-10T05:47:54.321048+00:00', '--job-id', '538', '--raw', '--subdir', 'DAGS_FOLDER/mlops_diabetes_pipeline.py', '--cfg-path', '/tmp/tmpm4j66xcx']
+[2025-09-10T11:33:05.841+0545] {standard_task_runner.py:105} INFO - Job 538: Subtask start_docker
+[2025-09-10T11:33:05.867+0545] {task_command.py:467} INFO - Running <TaskInstance: mlops_diabetes_pipeline.start_docker manual__2025-09-10T05:47:54.321048+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-10T11:33:05.907+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='koiralaashok02@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='mlops_diabetes_pipeline' AIRFLOW_CTX_TASK_ID='start_docker' AIRFLOW_CTX_EXECUTION_DATE='2025-09-10T05:47:54.321048+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-10T05:47:54.321048+00:00'
+[2025-09-10T11:33:05.908+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-10T11:33:05.908+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-10T11:33:05.909+0545] {logging_mixin.py:190} INFO - Current task name:start_docker state:running start_date:2025-09-10 05:48:05.813920+00:00
+[2025-09-10T11:33:05.909+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline and current dag run status:running
+[2025-09-10T11:33:05.909+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-10T11:33:05.909+0545] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-09-10T11:33:05.910+0545] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'docker start mcs_container || docker run -d --name mcs_container -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mariadb:latest']
+[2025-09-10T11:33:05.931+0545] {subprocess.py:99} INFO - Output:
+[2025-09-10T11:33:05.941+0545] {subprocess.py:106} INFO - mcs_container
+[2025-09-10T11:33:05.943+0545] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-09-10T11:33:05.957+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-10T11:33:05.958+0545] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=mlops_diabetes_pipeline, task_id=start_docker, run_id=manual__2025-09-10T05:47:54.321048+00:00, execution_date=20250910T054754, start_date=20250910T054805, end_date=20250910T054805
+[2025-09-10T11:33:05.974+0545] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-10T11:33:05.974+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-10T11:33:05.974+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline queued_at:2025-09-10 05:47:54.334701+00:00
+[2025-09-10T11:33:05.974+0545] {logging_mixin.py:190} INFO - Task hostname:ashok-Nitro-ANV16-41 operator:BashOperator
+[2025-09-10T11:33:06.012+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-10T11:33:06.029+0545] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-10T11:33:06.035+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

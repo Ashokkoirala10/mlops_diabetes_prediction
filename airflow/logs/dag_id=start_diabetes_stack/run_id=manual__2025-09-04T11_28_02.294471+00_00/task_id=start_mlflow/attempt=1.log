@@ -1,0 +1,150 @@
+[2025-09-04T17:13:12.401+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-04T17:13:12.408+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: start_diabetes_stack.start_mlflow manual__2025-09-04T11:28:02.294471+00:00 [queued]>
+[2025-09-04T17:13:12.411+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: start_diabetes_stack.start_mlflow manual__2025-09-04T11:28:02.294471+00:00 [queued]>
+[2025-09-04T17:13:12.411+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-04T17:13:12.424+0545] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): start_mlflow> on 2025-09-04 11:28:02.294471+00:00
+[2025-09-04T17:13:12.431+0545] {standard_task_runner.py:72} INFO - Started process 116469 to run task
+[2025-09-04T17:13:12.434+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'start_diabetes_stack', 'start_mlflow', 'manual__2025-09-04T11:28:02.294471+00:00', '--job-id', '228', '--raw', '--subdir', 'DAGS_FOLDER/bash_operator.py', '--cfg-path', '/tmp/tmpk57jhpbq']
+[2025-09-04T17:13:12.434+0545] {standard_task_runner.py:105} INFO - Job 228: Subtask start_mlflow
+[2025-09-04T17:13:12.456+0545] {task_command.py:467} INFO - Running <TaskInstance: start_diabetes_stack.start_mlflow manual__2025-09-04T11:28:02.294471+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-04T17:13:12.495+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ashok' AIRFLOW_CTX_DAG_ID='start_diabetes_stack' AIRFLOW_CTX_TASK_ID='start_mlflow' AIRFLOW_CTX_EXECUTION_DATE='2025-09-04T11:28:02.294471+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-04T11:28:02.294471+00:00'
+[2025-09-04T17:13:12.496+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-04T17:13:12.496+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-04T17:13:12.496+0545] {logging_mixin.py:190} INFO - Current task name:start_mlflow state:running start_date:2025-09-04 11:28:12.408599+00:00
+[2025-09-04T17:13:12.496+0545] {logging_mixin.py:190} INFO - Dag name:start_diabetes_stack and current dag run status:running
+[2025-09-04T17:13:12.496+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-04T17:13:12.497+0545] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-09-04T17:13:12.497+0545] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', '\n        source ~/anaconda3/etc/profile.d/conda.sh\n        conda activate mysecondenvironment\n        mlflow ui --host 0.0.0.0 --port 5000\n        ']
+[2025-09-04T17:13:12.507+0545] {subprocess.py:99} INFO - Output:
+[2025-09-04T17:13:12.508+0545] {subprocess.py:106} INFO - /usr/bin/bash: line 2: /home/ashok/anaconda3/etc/profile.d/conda.sh: No such file or directory
+[2025-09-04T17:13:12.602+0545] {subprocess.py:106} INFO - 
+[2025-09-04T17:13:12.602+0545] {subprocess.py:106} INFO - CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+[2025-09-04T17:13:12.602+0545] {subprocess.py:106} INFO - To initialize your shell, run
+[2025-09-04T17:13:12.602+0545] {subprocess.py:106} INFO - 
+[2025-09-04T17:13:12.602+0545] {subprocess.py:106} INFO -     $ conda init <SHELL_NAME>
+[2025-09-04T17:13:12.602+0545] {subprocess.py:106} INFO - 
+[2025-09-04T17:13:12.602+0545] {subprocess.py:106} INFO - Currently supported shells are:
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO -   - bash
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO -   - fish
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO -   - tcsh
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO -   - xonsh
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO -   - zsh
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO -   - powershell
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO - 
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO - See 'conda init --help' for more information and options.
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO - 
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO - IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO - 
+[2025-09-04T17:13:12.603+0545] {subprocess.py:106} INFO - 
+[2025-09-04T17:13:13.314+0545] {subprocess.py:106} INFO - [2025-09-04 17:13:13 +0545] [116500] [INFO] Starting gunicorn 23.0.0
+[2025-09-04T17:13:13.314+0545] {subprocess.py:106} INFO - [2025-09-04 17:13:13 +0545] [116500] [INFO] Listening at: http://0.0.0.0:5000 (116500)
+[2025-09-04T17:13:13.315+0545] {subprocess.py:106} INFO - [2025-09-04 17:13:13 +0545] [116500] [INFO] Using worker: sync
+[2025-09-04T17:13:13.317+0545] {subprocess.py:106} INFO - [2025-09-04 17:13:13 +0545] [116502] [INFO] Booting worker with pid: 116502
+[2025-09-04T17:13:13.410+0545] {subprocess.py:106} INFO - [2025-09-04 17:13:13 +0545] [116503] [INFO] Booting worker with pid: 116503
+[2025-09-04T17:13:13.432+0545] {subprocess.py:106} INFO - [2025-09-04 17:13:13 +0545] [116504] [INFO] Booting worker with pid: 116504
+[2025-09-04T17:13:13.448+0545] {subprocess.py:106} INFO - [2025-09-04 17:13:13 +0545] [116505] [INFO] Booting worker with pid: 116505
+[2025-09-04T17:20:35.411+0545] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-09-04T17:20:35.419+0545] {process_utils.py:132} INFO - Sending 15 to group 116469. PIDs of all processes in the group: [116471, 116474, 116500, 116502, 116503, 116504, 116505, 116469]
+[2025-09-04T17:20:35.419+0545] {process_utils.py:87} INFO - Sending the signal 15 to group 116469
+[2025-09-04T17:20:35.420+0545] {taskinstance.py:3094} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-09-04T17:20:35.421+0545] {taskinstance.py:3095} ERROR - Stacktrace: 
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/__main__.py", line 62, in main
+    args.func(args)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 254, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 322, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/jobs/local_task_job_runner.py", line 171, in _execute
+    self.task_runner.start()
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/task/task_runner/standard_task_runner.py", line 55, in start
+    self.process = self._start_by_fork()
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/bash.py", line 257, in execute
+    result = self._run_inline_command(bash_path=bash_path, env=env)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/bash.py", line 284, in _run_inline_command
+    return self.subprocess_hook.run_command(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/hooks/subprocess.py", line 104, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    self.log.error("Stacktrace: \n%s", "".join(traceback.format_stack()))
+
+[2025-09-04T17:20:35.421+0545] {subprocess.py:117} INFO - Sending SIGTERM signal to process group
+[2025-09-04T17:20:35.427+0545] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/bash.py", line 257, in execute
+    result = self._run_inline_command(bash_path=bash_path, env=env)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/bash.py", line 284, in _run_inline_command
+    return self.subprocess_hook.run_command(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/hooks/subprocess.py", line 104, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3097, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-09-04T17:20:35.432+0545] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-09-04T17:20:35.432+0545] {logging_mixin.py:190} INFO - Task start:2025-09-04 11:28:12.408599+00:00 end:2025-09-04 11:35:35.431559+00:00 duration:443.02296
+[2025-09-04T17:20:35.432+0545] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): start_mlflow> dag:<DAG: start_diabetes_stack> dagrun:<DagRun start_diabetes_stack @ 2025-09-04 11:28:02.294471+00:00: manual__2025-09-04T11:28:02.294471+00:00, state:running, queued_at: 2025-09-04 11:28:02.304172+00:00. externally triggered: True>
+[2025-09-04T17:20:35.432+0545] {logging_mixin.py:190} INFO - Failure caused by Task received SIGTERM signal
+[2025-09-04T17:20:35.433+0545] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=start_diabetes_stack, task_id=start_mlflow, run_id=manual__2025-09-04T11:28:02.294471+00:00, execution_date=20250904T112802, start_date=20250904T112812, end_date=20250904T113535
+[2025-09-04T17:20:35.463+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-04T17:20:35.552+0545] {process_utils.py:80} INFO - Process psutil.Process(pid=116471, status='terminated', started='17:13:12') (116471) terminated with exit code None
+[2025-09-04T17:20:35.685+0545] {process_utils.py:80} INFO - Process psutil.Process(pid=116503, status='terminated', started='17:13:13') (116503) terminated with exit code None
+[2025-09-04T17:20:35.686+0545] {process_utils.py:80} INFO - Process psutil.Process(pid=116505, status='terminated', started='17:13:13') (116505) terminated with exit code None
+[2025-09-04T17:20:35.778+0545] {process_utils.py:80} INFO - Process psutil.Process(pid=116500, status='terminated', started='17:13:13') (116500) terminated with exit code None
+[2025-09-04T17:20:35.778+0545] {process_utils.py:80} INFO - Process psutil.Process(pid=116474, status='terminated', started='17:13:12') (116474) terminated with exit code None
+[2025-09-04T17:20:35.778+0545] {process_utils.py:80} INFO - Process psutil.Process(pid=116469, status='terminated', exitcode=2, started='17:13:12') (116469) terminated with exit code 2
+[2025-09-04T17:20:35.779+0545] {process_utils.py:80} INFO - Process psutil.Process(pid=116504, status='terminated', started='17:13:13') (116504) terminated with exit code None
+[2025-09-04T17:20:35.779+0545] {process_utils.py:80} INFO - Process psutil.Process(pid=116502, status='terminated', started='17:13:13') (116502) terminated with exit code None
+[2025-09-04T17:20:37.691+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-04T17:20:37.699+0545] {taskinstance.py:2604} INFO - Dependencies not met for <TaskInstance: start_diabetes_stack.start_mlflow manual__2025-09-04T11:28:02.294471+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2025-09-04T11:35:37.699465+00:00 and task will be retried at 2025-09-04T11:36:35.431559+00:00.
+[2025-09-04T17:20:37.699+0545] {local_task_job_runner.py:166} INFO - Task is not able to be run

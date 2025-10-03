@@ -1,0 +1,15 @@
+[2025-09-01T20:39:59.507+0545] {processor.py:186} INFO - Started process (PID=150561) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-09-01T20:39:59.509+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2025-09-01T20:39:59.513+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:59.512+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-09-01T20:39:59.524+0545] {processor.py:925} INFO - DAG(s) 'latest_only_with_trigger' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-09-01T20:39:59.669+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:59.668+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:latest_only_with_trigger
+[2025-09-01T20:39:59.689+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:59.688+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:latest_only_with_trigger
+[2025-09-01T20:39:59.704+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:59.704+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:latest_only_with_trigger
+[2025-09-01T20:39:59.728+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:59.727+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:latest_only_with_trigger
+[2025-09-01T20:39:59.741+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:59.740+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:latest_only_with_trigger
+[2025-09-01T20:39:59.754+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:59.754+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:latest_only_with_trigger
+[2025-09-01T20:39:59.767+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:59.766+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:latest_only_with_trigger
+[2025-09-01T20:39:59.768+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:59.767+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:39:59.784+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:59.784+0545] {dag.py:3262} INFO - Creating ORM DAG for latest_only_with_trigger
+[2025-09-01T20:39:59.795+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:59.795+0545] {dag.py:4180} INFO - Setting next_dagrun for latest_only_with_trigger to 2025-09-01 08:00:00+00:00, run_after=2025-09-01 12:00:00+00:00
+[2025-09-01T20:39:59.826+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.329 seconds

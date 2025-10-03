@@ -1,0 +1,15 @@
+[2025-09-01T20:40:08.668+0545] {processor.py:186} INFO - Started process (PID=150680) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_display_name.py
+[2025-09-01T20:40:08.669+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_display_name.py for tasks to queue
+[2025-09-01T20:40:08.671+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:08.671+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_display_name.py
+[2025-09-01T20:40:08.681+0545] {processor.py:925} INFO - DAG(s) 'example_display_name' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_display_name.py
+[2025-09-01T20:40:08.802+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:08.802+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_display_name
+[2025-09-01T20:40:08.819+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:08.818+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_display_name
+[2025-09-01T20:40:08.837+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:08.836+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_display_name
+[2025-09-01T20:40:08.859+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:08.859+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_display_name
+[2025-09-01T20:40:08.871+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:08.871+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_display_name
+[2025-09-01T20:40:08.882+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:08.882+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_display_name
+[2025-09-01T20:40:08.895+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:08.895+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_display_name
+[2025-09-01T20:40:08.896+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:08.896+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:08.906+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:08.906+0545] {dag.py:3262} INFO - Creating ORM DAG for example_display_name
+[2025-09-01T20:40:08.907+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:08.906+0545] {dag.py:4180} INFO - Setting next_dagrun for example_display_name to None, run_after=None
+[2025-09-01T20:40:08.927+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_display_name.py took 0.267 seconds

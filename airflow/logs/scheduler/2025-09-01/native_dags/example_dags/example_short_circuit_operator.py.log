@@ -1,0 +1,15 @@
+[2025-09-01T20:39:54.028+0545] {processor.py:186} INFO - Started process (PID=150470) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-09-01T20:39:54.029+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py for tasks to queue
+[2025-09-01T20:39:54.031+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:54.031+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-09-01T20:39:54.042+0545] {processor.py:925} INFO - DAG(s) 'example_short_circuit_operator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-09-01T20:39:54.164+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:54.163+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_short_circuit_operator
+[2025-09-01T20:39:54.181+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:54.181+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_short_circuit_operator
+[2025-09-01T20:39:54.195+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:54.195+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_short_circuit_operator
+[2025-09-01T20:39:54.219+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:54.218+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_short_circuit_operator
+[2025-09-01T20:39:54.232+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:54.231+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_short_circuit_operator
+[2025-09-01T20:39:54.248+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:54.247+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_short_circuit_operator
+[2025-09-01T20:39:54.262+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:54.261+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_short_circuit_operator
+[2025-09-01T20:39:54.262+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:54.262+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:39:54.275+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:54.275+0545] {dag.py:3262} INFO - Creating ORM DAG for example_short_circuit_operator
+[2025-09-01T20:39:54.275+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:54.275+0545] {dag.py:4180} INFO - Setting next_dagrun for example_short_circuit_operator to None, run_after=None
+[2025-09-01T20:39:54.298+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py took 0.278 seconds

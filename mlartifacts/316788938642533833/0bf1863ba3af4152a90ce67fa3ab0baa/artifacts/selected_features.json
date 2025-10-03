@@ -1,0 +1,40 @@
+{
+  "selected_features": {
+    "features": [
+      "HighBP",
+      "HighChol",
+      "CholCheck",
+      "BMI",
+      "Smoker",
+      "Stroke",
+      "HeartDiseaseorAttack",
+      "PhysActivity",
+      "HvyAlcoholConsump",
+      "GenHlth",
+      "MentHlth",
+      "PhysHlth",
+      "DiffWalk",
+      "Age",
+      "Education",
+      "Income"
+    ],
+    "types": {
+      "HighBP": "int",
+      "HighChol": "int",
+      "CholCheck": "int",
+      "BMI": "float",
+      "Smoker": "int",
+      "Stroke": "int",
+      "HeartDiseaseorAttack": "int",
+      "PhysActivity": "int",
+      "HvyAlcoholConsump": "int",
+      "GenHlth": "float",
+      "MentHlth": "float",
+      "PhysHlth": "float",
+      "DiffWalk": "int",
+      "Age": "float",
+      "Education": "float",
+      "Income": "float"
+    }
+  }
+}

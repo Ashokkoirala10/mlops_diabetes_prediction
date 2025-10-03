@@ -1,0 +1,22 @@
+[2025-09-01T20:39:43.173+0545] {processor.py:186} INFO - Started process (PID=150328) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-09-01T20:39:43.174+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2025-09-01T20:39:43.176+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:43.176+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-09-01T20:39:43.185+0545] {processor.py:925} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-09-01T20:39:43.315+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:43.314+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_params_ui_tutorial
+[2025-09-01T20:39:43.332+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:43.331+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_params_ui_tutorial
+[2025-09-01T20:39:43.345+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:43.345+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_params_ui_tutorial
+[2025-09-01T20:39:43.370+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:43.370+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_params_ui_tutorial
+[2025-09-01T20:39:43.383+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:43.383+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_params_ui_tutorial
+[2025-09-01T20:39:43.395+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:43.395+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_params_ui_tutorial
+[2025-09-01T20:39:43.406+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:43.406+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_params_ui_tutorial
+[2025-09-01T20:39:43.407+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:43.407+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:39:43.417+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:43.417+0545] {dag.py:3262} INFO - Creating ORM DAG for example_params_ui_tutorial
+[2025-09-01T20:39:43.418+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:43.418+0545] {dag.py:4180} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2025-09-01T20:39:43.440+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.272 seconds
+[2025-09-01T20:40:52.102+0545] {processor.py:186} INFO - Started process (PID=151243) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-09-01T20:40:52.105+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2025-09-01T20:40:52.108+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:52.108+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-09-01T20:40:52.121+0545] {processor.py:925} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-09-01T20:40:52.176+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:52.176+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:52.191+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:52.191+0545] {dag.py:4180} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2025-09-01T20:40:52.220+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.127 seconds

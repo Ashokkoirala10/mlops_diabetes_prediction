@@ -1,0 +1,29 @@
+[2025-09-04T13:18:05.490+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-04T13:18:05.495+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: diabetes_pipeline_setup.start_redis manual__2025-09-04T07:30:15.465196+00:00 [queued]>
+[2025-09-04T13:18:05.497+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: diabetes_pipeline_setup.start_redis manual__2025-09-04T07:30:15.465196+00:00 [queued]>
+[2025-09-04T13:18:05.497+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-04T13:18:05.509+0545] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): start_redis> on 2025-09-04 07:30:15.465196+00:00
+[2025-09-04T13:18:05.515+0545] {standard_task_runner.py:72} INFO - Started process 6170 to run task
+[2025-09-04T13:18:05.518+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'diabetes_pipeline_setup', 'start_redis', 'manual__2025-09-04T07:30:15.465196+00:00', '--job-id', '114', '--raw', '--subdir', 'DAGS_FOLDER/bash_operator.py', '--cfg-path', '/tmp/tmp8y18d8iv']
+[2025-09-04T13:18:05.519+0545] {standard_task_runner.py:105} INFO - Job 114: Subtask start_redis
+[2025-09-04T13:18:05.545+0545] {task_command.py:467} INFO - Running <TaskInstance: diabetes_pipeline_setup.start_redis manual__2025-09-04T07:30:15.465196+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-04T13:18:05.587+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='diabetes_pipeline_setup' AIRFLOW_CTX_TASK_ID='start_redis' AIRFLOW_CTX_EXECUTION_DATE='2025-09-04T07:30:15.465196+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-04T07:30:15.465196+00:00'
+[2025-09-04T13:18:05.587+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-04T13:18:05.587+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-04T13:18:05.588+0545] {logging_mixin.py:190} INFO - Current task name:start_redis state:running start_date:2025-09-04 07:33:05.495176+00:00
+[2025-09-04T13:18:05.588+0545] {logging_mixin.py:190} INFO - Dag name:diabetes_pipeline_setup and current dag run status:running
+[2025-09-04T13:18:05.588+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-04T13:18:05.588+0545] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-09-04T13:18:05.588+0545] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'source ~/miniconda3/etc/profile.d/conda.sh && conda activate mysecondenvironment && docker start my-redis || docker run -d --name my-redis -p 6379:6379 redis:latest']
+[2025-09-04T13:18:05.597+0545] {subprocess.py:99} INFO - Output:
+[2025-09-04T13:18:05.711+0545] {subprocess.py:106} INFO - my-redis
+[2025-09-04T13:18:05.712+0545] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-09-04T13:18:05.728+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-04T13:18:05.728+0545] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=diabetes_pipeline_setup, task_id=start_redis, run_id=manual__2025-09-04T07:30:15.465196+00:00, execution_date=20250904T073015, start_date=20250904T073305, end_date=20250904T073305
+[2025-09-04T13:18:05.747+0545] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-04T13:18:05.747+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-04T13:18:05.747+0545] {logging_mixin.py:190} INFO - Dag name:diabetes_pipeline_setup queued_at:2025-09-04 07:30:15.472054+00:00
+[2025-09-04T13:18:05.747+0545] {logging_mixin.py:190} INFO - Task hostname:ashok-Nitro-ANV16-41 operator:BashOperator
+[2025-09-04T13:18:05.770+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-04T13:18:05.785+0545] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-04T13:18:05.785+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

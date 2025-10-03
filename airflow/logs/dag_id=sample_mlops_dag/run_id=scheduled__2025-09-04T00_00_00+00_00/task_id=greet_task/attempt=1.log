@@ -1,0 +1,26 @@
+[2025-09-05T10:30:11.619+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-05T10:30:11.624+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sample_mlops_dag.greet_task scheduled__2025-09-04T00:00:00+00:00 [queued]>
+[2025-09-05T10:30:11.626+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sample_mlops_dag.greet_task scheduled__2025-09-04T00:00:00+00:00 [queued]>
+[2025-09-05T10:30:11.626+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-05T10:30:11.638+0545] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): greet_task> on 2025-09-04 00:00:00+00:00
+[2025-09-05T10:30:11.641+0545] {standard_task_runner.py:72} INFO - Started process 9396 to run task
+[2025-09-05T10:30:11.644+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'sample_mlops_dag', 'greet_task', 'scheduled__2025-09-04T00:00:00+00:00', '--job-id', '308', '--raw', '--subdir', 'DAGS_FOLDER/sample_dag.py', '--cfg-path', '/tmp/tmpua76ofev']
+[2025-09-05T10:30:11.645+0545] {standard_task_runner.py:105} INFO - Job 308: Subtask greet_task
+[2025-09-05T10:30:11.670+0545] {task_command.py:467} INFO - Running <TaskInstance: sample_mlops_dag.greet_task scheduled__2025-09-04T00:00:00+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-05T10:30:11.713+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ashok' AIRFLOW_CTX_DAG_ID='sample_mlops_dag' AIRFLOW_CTX_TASK_ID='greet_task' AIRFLOW_CTX_EXECUTION_DATE='2025-09-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-04T00:00:00+00:00'
+[2025-09-05T10:30:11.714+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-05T10:30:11.714+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-05T10:30:11.714+0545] {logging_mixin.py:190} INFO - Current task name:greet_task state:running start_date:2025-09-05 04:45:11.624547+00:00
+[2025-09-05T10:30:11.715+0545] {logging_mixin.py:190} INFO - Dag name:sample_mlops_dag and current dag run status:running
+[2025-09-05T10:30:11.715+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-05T10:30:11.715+0545] {logging_mixin.py:190} INFO - Hello from Airflow DAG!
+[2025-09-05T10:30:11.715+0545] {python.py:240} INFO - Done. Returned value was: None
+[2025-09-05T10:30:11.717+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-05T10:30:11.717+0545] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=sample_mlops_dag, task_id=greet_task, run_id=scheduled__2025-09-04T00:00:00+00:00, execution_date=20250904T000000, start_date=20250905T044511, end_date=20250905T044511
+[2025-09-05T10:30:11.739+0545] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-05T10:30:11.739+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-05T10:30:11.740+0545] {logging_mixin.py:190} INFO - Dag name:sample_mlops_dag queued_at:2025-09-05 04:45:09.887513+00:00
+[2025-09-05T10:30:11.740+0545] {logging_mixin.py:190} INFO - Task hostname:ashok-Nitro-ANV16-41 operator:PythonOperator
+[2025-09-05T10:30:11.776+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-05T10:30:11.787+0545] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-05T10:30:11.795+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

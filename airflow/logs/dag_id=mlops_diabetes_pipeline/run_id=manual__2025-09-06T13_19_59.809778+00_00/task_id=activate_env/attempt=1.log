@@ -1,0 +1,30 @@
+[2025-09-06T19:05:04.070+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-06T19:05:04.075+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.activate_env manual__2025-09-06T13:19:59.809778+00:00 [queued]>
+[2025-09-06T19:05:04.078+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.activate_env manual__2025-09-06T13:19:59.809778+00:00 [queued]>
+[2025-09-06T19:05:04.078+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-06T19:05:04.090+0545] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): activate_env> on 2025-09-06 13:19:59.809778+00:00
+[2025-09-06T19:05:04.098+0545] {standard_task_runner.py:72} INFO - Started process 28359 to run task
+[2025-09-06T19:05:04.101+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'mlops_diabetes_pipeline', 'activate_env', 'manual__2025-09-06T13:19:59.809778+00:00', '--job-id', '449', '--raw', '--subdir', 'DAGS_FOLDER/mlops_diabetes_pipeline.py', '--cfg-path', '/tmp/tmp4x59qfe3']
+[2025-09-06T19:05:04.101+0545] {standard_task_runner.py:105} INFO - Job 449: Subtask activate_env
+[2025-09-06T19:05:04.130+0545] {task_command.py:467} INFO - Running <TaskInstance: mlops_diabetes_pipeline.activate_env manual__2025-09-06T13:19:59.809778+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-06T19:05:04.176+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='koiralaashok02@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='mlops_diabetes_pipeline' AIRFLOW_CTX_TASK_ID='activate_env' AIRFLOW_CTX_EXECUTION_DATE='2025-09-06T13:19:59.809778+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-06T13:19:59.809778+00:00'
+[2025-09-06T19:05:04.177+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-06T19:05:04.177+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-06T19:05:04.177+0545] {logging_mixin.py:190} INFO - Current task name:activate_env state:running start_date:2025-09-06 13:20:04.075658+00:00
+[2025-09-06T19:05:04.177+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline and current dag run status:running
+[2025-09-06T19:05:04.177+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-06T19:05:04.178+0545] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-09-06T19:05:04.178+0545] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'conda run -n mysecondenvironment /bin/bash -c "echo Environment activated"']
+[2025-09-06T19:05:04.195+0545] {subprocess.py:99} INFO - Output:
+[2025-09-06T19:05:04.739+0545] {subprocess.py:106} INFO - Environment activated
+[2025-09-06T19:05:04.739+0545] {subprocess.py:106} INFO - 
+[2025-09-06T19:05:04.781+0545] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-09-06T19:05:04.802+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-06T19:05:04.803+0545] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=mlops_diabetes_pipeline, task_id=activate_env, run_id=manual__2025-09-06T13:19:59.809778+00:00, execution_date=20250906T131959, start_date=20250906T132004, end_date=20250906T132004
+[2025-09-06T19:05:04.827+0545] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-06T19:05:04.828+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-06T19:05:04.828+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline queued_at:2025-09-06 13:19:59.825814+00:00
+[2025-09-06T19:05:04.828+0545] {logging_mixin.py:190} INFO - Task hostname:ashok-Nitro-ANV16-41 operator:BashOperator
+[2025-09-06T19:05:04.875+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-06T19:05:04.898+0545] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-06T19:05:04.906+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,26 @@
+[2025-09-10T11:04:39.383+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-10T11:04:39.389+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.ingest_data manual__2025-09-10T05:19:11.066956+00:00 [queued]>
+[2025-09-10T11:04:39.392+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.ingest_data manual__2025-09-10T05:19:11.066956+00:00 [queued]>
+[2025-09-10T11:04:39.392+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-10T11:04:39.404+0545] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): ingest_data> on 2025-09-10 05:19:11.066956+00:00
+[2025-09-10T11:04:39.414+0545] {standard_task_runner.py:72} INFO - Started process 54097 to run task
+[2025-09-10T11:04:39.417+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'mlops_diabetes_pipeline', 'ingest_data', 'manual__2025-09-10T05:19:11.066956+00:00', '--job-id', '487', '--raw', '--subdir', 'DAGS_FOLDER/mlops_diabetes_pipeline.py', '--cfg-path', '/tmp/tmpxth00u23']
+[2025-09-10T11:04:39.418+0545] {standard_task_runner.py:105} INFO - Job 487: Subtask ingest_data
+[2025-09-10T11:04:39.444+0545] {task_command.py:467} INFO - Running <TaskInstance: mlops_diabetes_pipeline.ingest_data manual__2025-09-10T05:19:11.066956+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-10T11:04:39.487+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='koiralaashok02@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='mlops_diabetes_pipeline' AIRFLOW_CTX_TASK_ID='ingest_data' AIRFLOW_CTX_EXECUTION_DATE='2025-09-10T05:19:11.066956+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-10T05:19:11.066956+00:00'
+[2025-09-10T11:04:39.487+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-10T11:04:39.488+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-10T11:04:39.488+0545] {logging_mixin.py:190} INFO - Current task name:ingest_data state:running start_date:2025-09-10 05:19:39.389614+00:00
+[2025-09-10T11:04:39.488+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline and current dag run status:running
+[2025-09-10T11:04:39.488+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-10T11:04:41.776+0545] {logging_mixin.py:190} INFO -  Ingested 70692 rows into diabetes_raw and cached to Redis key 'diabetes:raw_df'
+[2025-09-10T11:04:41.777+0545] {python.py:240} INFO - Done. Returned value was: None
+[2025-09-10T11:04:41.779+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-10T11:04:41.780+0545] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=mlops_diabetes_pipeline, task_id=ingest_data, run_id=manual__2025-09-10T05:19:11.066956+00:00, execution_date=20250910T051911, start_date=20250910T051939, end_date=20250910T051941
+[2025-09-10T11:04:41.798+0545] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-10T11:04:41.799+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-10T11:04:41.799+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline queued_at:2025-09-10 05:19:11.075027+00:00
+[2025-09-10T11:04:41.799+0545] {logging_mixin.py:190} INFO - Task hostname:ashok-Nitro-ANV16-41 operator:PythonOperator
+[2025-09-10T11:04:41.835+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-10T11:04:41.848+0545] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-10T11:04:41.855+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

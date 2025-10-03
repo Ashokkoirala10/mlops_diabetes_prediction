@@ -1,0 +1,33 @@
+[2025-09-04T12:35:17.804+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-04T12:35:17.810+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.log_model_mlflow manual__2025-09-04T06:49:40.611369+00:00 [queued]>
+[2025-09-04T12:35:17.813+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.log_model_mlflow manual__2025-09-04T06:49:40.611369+00:00 [queued]>
+[2025-09-04T12:35:17.813+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-04T12:35:17.824+0545] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): log_model_mlflow> on 2025-09-04 06:49:40.611369+00:00
+[2025-09-04T12:35:17.834+0545] {standard_task_runner.py:72} INFO - Started process 79289 to run task
+[2025-09-04T12:35:17.837+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'mlops_diabetes_pipeline', 'log_model_mlflow', 'manual__2025-09-04T06:49:40.611369+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/mlops_diabetes_pipeline.py', '--cfg-path', '/tmp/tmpzyehyqbl']
+[2025-09-04T12:35:17.837+0545] {standard_task_runner.py:105} INFO - Job 84: Subtask log_model_mlflow
+[2025-09-04T12:35:17.861+0545] {task_command.py:467} INFO - Running <TaskInstance: mlops_diabetes_pipeline.log_model_mlflow manual__2025-09-04T06:49:40.611369+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-04T12:35:17.900+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='koiralaashok02@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='mlops_diabetes_pipeline' AIRFLOW_CTX_TASK_ID='log_model_mlflow' AIRFLOW_CTX_EXECUTION_DATE='2025-09-04T06:49:40.611369+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-04T06:49:40.611369+00:00'
+[2025-09-04T12:35:17.901+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-04T12:35:17.901+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-04T12:35:17.901+0545] {logging_mixin.py:190} INFO - Current task name:log_model_mlflow state:running start_date:2025-09-04 06:50:17.810518+00:00
+[2025-09-04T12:35:17.902+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline and current dag run status:running
+[2025-09-04T12:35:17.902+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-04T12:35:18.009+0545] {logging_mixin.py:190} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/sklearn/metrics/_plot/confusion_matrix.py:136 UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+[2025-09-04T12:35:19.883+0545] {logging_mixin.py:190} WARNING - 2025/09/04 12:35:19 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+[2025-09-04T12:35:19.910+0545] {logging_mixin.py:190} WARNING - Registered model 'Diabetes_XGB_Model' already exists. Creating a new version of this model...
+[2025-09-04T12:35:19.923+0545] {logging_mixin.py:190} WARNING - 2025/09/04 12:35:19 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: Diabetes_XGB_Model, version 7
+[2025-09-04T12:35:19.923+0545] {logging_mixin.py:190} WARNING - Created version '7' of model 'Diabetes_XGB_Model'.
+[2025-09-04T12:35:19.929+0545] {logging_mixin.py:190} WARNING - 2025/09/04 12:35:19 INFO mlflow.tracking._tracking_service.client: 🏃 View run xgb_20250904_123518 at: http://localhost:5000/#/experiments/316788938642533833/runs/d8c6b3a3d54f4767a8f89f7440397898.
+[2025-09-04T12:35:19.929+0545] {logging_mixin.py:190} WARNING - 2025/09/04 12:35:19 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://localhost:5000/#/experiments/316788938642533833.
+[2025-09-04T12:35:19.932+0545] {logging_mixin.py:190} INFO - Logged tuned model, confusion matrix, and classification report to MLflow
+[2025-09-04T12:35:19.933+0545] {python.py:240} INFO - Done. Returned value was: None
+[2025-09-04T12:35:19.937+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-04T12:35:19.937+0545] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=mlops_diabetes_pipeline, task_id=log_model_mlflow, run_id=manual__2025-09-04T06:49:40.611369+00:00, execution_date=20250904T064940, start_date=20250904T065017, end_date=20250904T065019
+[2025-09-04T12:35:19.958+0545] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-04T12:35:19.958+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-04T12:35:19.958+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline queued_at:2025-09-04 06:49:40.619619+00:00
+[2025-09-04T12:35:19.958+0545] {logging_mixin.py:190} INFO - Task hostname:ashok-Nitro-ANV16-41 operator:PythonOperator
+[2025-09-04T12:35:20.013+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-04T12:35:20.028+0545] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-04T12:35:20.035+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

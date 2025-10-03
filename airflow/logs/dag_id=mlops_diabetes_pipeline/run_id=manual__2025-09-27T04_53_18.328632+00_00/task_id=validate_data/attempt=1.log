@@ -1,0 +1,452 @@
+[2025-09-27T10:39:01.719+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-27T10:39:01.727+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.validate_data manual__2025-09-27T04:53:18.328632+00:00 [queued]>
+[2025-09-27T10:39:01.734+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.validate_data manual__2025-09-27T04:53:18.328632+00:00 [queued]>
+[2025-09-27T10:39:01.734+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-27T10:39:01.748+0545] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): validate_data> on 2025-09-27 04:53:18.328632+00:00
+[2025-09-27T10:39:01.759+0545] {standard_task_runner.py:72} INFO - Started process 40219 to run task
+[2025-09-27T10:39:01.763+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'mlops_diabetes_pipeline', 'validate_data', 'manual__2025-09-27T04:53:18.328632+00:00', '--job-id', '787', '--raw', '--subdir', 'DAGS_FOLDER/mlops_diabetes_pipeline.py', '--cfg-path', '/tmp/tmpgxsap05z']
+[2025-09-27T10:39:01.764+0545] {standard_task_runner.py:105} INFO - Job 787: Subtask validate_data
+[2025-09-27T10:39:01.792+0545] {task_command.py:467} INFO - Running <TaskInstance: mlops_diabetes_pipeline.validate_data manual__2025-09-27T04:53:18.328632+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-27T10:39:01.839+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='koiralaashok02@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='mlops_diabetes_pipeline' AIRFLOW_CTX_TASK_ID='validate_data' AIRFLOW_CTX_EXECUTION_DATE='2025-09-27T04:53:18.328632+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-27T04:53:18.328632+00:00'
+[2025-09-27T10:39:01.840+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-27T10:39:01.840+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-27T10:39:01.840+0545] {logging_mixin.py:190} INFO - Current task name:validate_data state:running start_date:2025-09-27 04:54:01.727866+00:00
+[2025-09-27T10:39:01.840+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline and current dag run status:running
+[2025-09-27T10:39:01.840+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-27T10:39:01.876+0545] {file_data_context.py:222} INFO - FileDataContext loading fluent config
+[2025-09-27T10:39:01.877+0545] {config.py:187} INFO - Loading 'datasources' ->
+[]
+[2025-09-27T10:39:01.920+0545] {logging_mixin.py:190} INFO - ℹ Datasource 'diabetes_mysql' already exists.
+[2025-09-27T10:39:01.921+0545] {logging_mixin.py:190} INFO - ℹ Using existing expectation suite: diabetes_raw_suite
+[2025-09-27T10:39:02.125+0545] {logging_mixin.py:190} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/great_expectations/expectations/expectation.py:1518 UserWarning: `result_format` configured at the Validator-level will not be persisted. Please add the configuration to your Checkpoint config or checkpoint_run() method instead.
+[2025-09-27T10:39:02.131+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/2 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.132+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/2 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.138+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 1/2 [00:00<00:00, 159.98it/s]
+[2025-09-27T10:39:02.138+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 1/2 [00:00<00:00, 151.66it/s]
+[2025-09-27T10:39:02.138+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 2/2 [00:00<00:00, 293.21it/s]
+[2025-09-27T10:39:02.139+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 2/2 [00:00<00:00, 286.48it/s]
+[2025-09-27T10:39:02.139+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 2/2 [00:00<00:00, 282.51it/s]
+[2025-09-27T10:39:02.139+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 2/2 [00:00<00:00, 277.72it/s]
+[2025-09-27T10:39:02.145+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.146+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.147+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 1885.93it/s]
+[2025-09-27T10:39:02.149+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 572.72it/s] 
+[2025-09-27T10:39:02.163+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 232.27it/s]
+[2025-09-27T10:39:02.164+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 215.23it/s]
+[2025-09-27T10:39:02.165+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 261.24it/s]
+[2025-09-27T10:39:02.166+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 248.21it/s]
+[2025-09-27T10:39:02.178+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 219.88it/s]
+[2025-09-27T10:39:02.178+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 213.72it/s]
+[2025-09-27T10:39:02.474+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 24.36it/s] 
+[2025-09-27T10:39:02.474+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 24.36it/s]
+[2025-09-27T10:39:02.475+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 24.36it/s]
+[2025-09-27T10:39:02.475+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 24.36it/s]
+[2025-09-27T10:39:02.475+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 24.25it/s]
+[2025-09-27T10:39:02.484+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.485+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.486+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 1940.01it/s]
+[2025-09-27T10:39:02.487+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 821.20it/s] 
+[2025-09-27T10:39:02.500+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 251.30it/s]
+[2025-09-27T10:39:02.502+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 230.50it/s]
+[2025-09-27T10:39:02.502+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 280.18it/s]
+[2025-09-27T10:39:02.504+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 258.30it/s]
+[2025-09-27T10:39:02.517+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 215.82it/s]
+[2025-09-27T10:39:02.518+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 209.11it/s]
+[2025-09-27T10:39:02.534+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 162.23it/s]
+[2025-09-27T10:39:02.535+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 159.29it/s]
+[2025-09-27T10:39:02.535+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 158.03it/s]
+[2025-09-27T10:39:02.535+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 157.47it/s]
+[2025-09-27T10:39:02.542+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.543+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.544+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2132.34it/s]
+[2025-09-27T10:39:02.545+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 785.97it/s] 
+[2025-09-27T10:39:02.558+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 264.42it/s]
+[2025-09-27T10:39:02.559+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 241.31it/s]
+[2025-09-27T10:39:02.560+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 291.94it/s]
+[2025-09-27T10:39:02.561+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 271.05it/s]
+[2025-09-27T10:39:02.573+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 232.28it/s]
+[2025-09-27T10:39:02.574+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 225.30it/s]
+[2025-09-27T10:39:02.590+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 169.18it/s]
+[2025-09-27T10:39:02.591+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 165.91it/s]
+[2025-09-27T10:39:02.591+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 165.21it/s]
+[2025-09-27T10:39:02.591+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 164.38it/s]
+[2025-09-27T10:39:02.600+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.600+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.601+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2440.68it/s]
+[2025-09-27T10:39:02.602+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 850.77it/s] 
+[2025-09-27T10:39:02.615+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 278.07it/s]
+[2025-09-27T10:39:02.616+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 252.81it/s]
+[2025-09-27T10:39:02.616+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 306.60it/s]
+[2025-09-27T10:39:02.617+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 289.33it/s]
+[2025-09-27T10:39:02.629+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 239.15it/s]
+[2025-09-27T10:39:02.630+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 232.39it/s]
+[2025-09-27T10:39:02.644+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 180.80it/s]
+[2025-09-27T10:39:02.645+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 177.73it/s]
+[2025-09-27T10:39:02.645+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 177.19it/s]
+[2025-09-27T10:39:02.645+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 176.51it/s]
+[2025-09-27T10:39:02.654+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.654+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.655+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2535.09it/s]
+[2025-09-27T10:39:02.656+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 958.37it/s] 
+[2025-09-27T10:39:02.668+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 289.58it/s]
+[2025-09-27T10:39:02.670+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 262.84it/s]
+[2025-09-27T10:39:02.670+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 317.97it/s]
+[2025-09-27T10:39:02.671+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 299.95it/s]
+[2025-09-27T10:39:02.682+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 255.28it/s]
+[2025-09-27T10:39:02.683+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 246.94it/s]
+[2025-09-27T10:39:02.701+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 171.43it/s]
+[2025-09-27T10:39:02.702+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 168.96it/s]
+[2025-09-27T10:39:02.702+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 168.48it/s]
+[2025-09-27T10:39:02.702+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 167.96it/s]
+[2025-09-27T10:39:02.709+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.709+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.710+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2495.12it/s]
+[2025-09-27T10:39:02.712+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 800.06it/s] 
+[2025-09-27T10:39:02.723+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 285.66it/s]
+[2025-09-27T10:39:02.724+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 258.18it/s]
+[2025-09-27T10:39:02.725+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 313.17it/s]
+[2025-09-27T10:39:02.726+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 295.17it/s]
+[2025-09-27T10:39:02.738+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 244.67it/s]
+[2025-09-27T10:39:02.738+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 237.57it/s]
+[2025-09-27T10:39:02.753+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 183.07it/s]
+[2025-09-27T10:39:02.754+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 177.86it/s]
+[2025-09-27T10:39:02.754+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 176.82it/s]
+[2025-09-27T10:39:02.754+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 176.19it/s]
+[2025-09-27T10:39:02.763+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.763+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.764+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2480.37it/s]
+[2025-09-27T10:39:02.765+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 957.06it/s] 
+[2025-09-27T10:39:02.776+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 306.32it/s]
+[2025-09-27T10:39:02.777+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 277.25it/s]
+[2025-09-27T10:39:02.778+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 335.46it/s]
+[2025-09-27T10:39:02.779+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 313.10it/s]
+[2025-09-27T10:39:02.790+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 261.49it/s]
+[2025-09-27T10:39:02.791+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 252.08it/s]
+[2025-09-27T10:39:02.808+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 176.30it/s]
+[2025-09-27T10:39:02.809+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 173.29it/s]
+[2025-09-27T10:39:02.809+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 172.67it/s]
+[2025-09-27T10:39:02.809+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 172.22it/s]
+[2025-09-27T10:39:02.817+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.817+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.818+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2266.58it/s]
+[2025-09-27T10:39:02.820+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 824.84it/s] 
+[2025-09-27T10:39:02.832+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 267.52it/s]
+[2025-09-27T10:39:02.833+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 243.11it/s]
+[2025-09-27T10:39:02.834+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 294.67it/s]
+[2025-09-27T10:39:02.835+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 279.17it/s]
+[2025-09-27T10:39:02.846+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 243.22it/s]
+[2025-09-27T10:39:02.847+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 236.08it/s]
+[2025-09-27T10:39:02.862+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 176.81it/s]
+[2025-09-27T10:39:02.863+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 173.04it/s]
+[2025-09-27T10:39:02.863+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 172.39it/s]
+[2025-09-27T10:39:02.864+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 171.91it/s]
+[2025-09-27T10:39:02.870+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.871+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.871+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2898.62it/s]
+[2025-09-27T10:39:02.873+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 1031.17it/s]
+[2025-09-27T10:39:02.884+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 309.23it/s] 
+[2025-09-27T10:39:02.885+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 278.45it/s]
+[2025-09-27T10:39:02.885+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 337.54it/s]
+[2025-09-27T10:39:02.886+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 317.05it/s]
+[2025-09-27T10:39:02.899+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 252.01it/s]
+[2025-09-27T10:39:02.900+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 240.74it/s]
+[2025-09-27T10:39:02.914+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 182.93it/s]
+[2025-09-27T10:39:02.915+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 180.10it/s]
+[2025-09-27T10:39:02.915+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 179.60it/s]
+[2025-09-27T10:39:02.915+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 179.13it/s]
+[2025-09-27T10:39:02.925+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.925+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.926+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2121.01it/s]
+[2025-09-27T10:39:02.928+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 739.02it/s] 
+[2025-09-27T10:39:02.940+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 270.29it/s]
+[2025-09-27T10:39:02.941+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 247.29it/s]
+[2025-09-27T10:39:02.942+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 299.30it/s]
+[2025-09-27T10:39:02.943+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 282.40it/s]
+[2025-09-27T10:39:02.954+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 238.55it/s]
+[2025-09-27T10:39:02.955+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 230.34it/s]
+[2025-09-27T10:39:02.973+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 165.91it/s]
+[2025-09-27T10:39:02.974+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 163.51it/s]
+[2025-09-27T10:39:02.974+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 163.01it/s]
+[2025-09-27T10:39:02.974+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 162.58it/s]
+[2025-09-27T10:39:02.982+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.982+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:02.983+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 1954.02it/s]
+[2025-09-27T10:39:02.985+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 655.36it/s] 
+[2025-09-27T10:39:02.998+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 245.02it/s]
+[2025-09-27T10:39:03.000+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 226.39it/s]
+[2025-09-27T10:39:03.000+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 275.80it/s]
+[2025-09-27T10:39:03.001+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 261.52it/s]
+[2025-09-27T10:39:03.013+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 228.28it/s]
+[2025-09-27T10:39:03.014+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 221.64it/s]
+[2025-09-27T10:39:03.029+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 171.61it/s]
+[2025-09-27T10:39:03.030+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 168.34it/s]
+[2025-09-27T10:39:03.030+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 167.88it/s]
+[2025-09-27T10:39:03.030+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 167.45it/s]
+[2025-09-27T10:39:03.037+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.037+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.038+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2125.85it/s]
+[2025-09-27T10:39:03.039+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 834.85it/s] 
+[2025-09-27T10:39:03.053+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 257.83it/s]
+[2025-09-27T10:39:03.054+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 237.17it/s]
+[2025-09-27T10:39:03.054+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 288.09it/s]
+[2025-09-27T10:39:03.055+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 273.12it/s]
+[2025-09-27T10:39:03.067+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 232.21it/s]
+[2025-09-27T10:39:03.068+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 225.80it/s]
+[2025-09-27T10:39:03.082+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 176.95it/s]
+[2025-09-27T10:39:03.083+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 174.08it/s]
+[2025-09-27T10:39:03.083+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 173.58it/s]
+[2025-09-27T10:39:03.083+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 173.08it/s]
+[2025-09-27T10:39:03.090+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.091+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.092+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2052.01it/s]
+[2025-09-27T10:39:03.093+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 769.24it/s] 
+[2025-09-27T10:39:03.105+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 274.43it/s]
+[2025-09-27T10:39:03.107+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 250.17it/s]
+[2025-09-27T10:39:03.107+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 303.67it/s]
+[2025-09-27T10:39:03.108+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 286.97it/s]
+[2025-09-27T10:39:03.120+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 242.24it/s]
+[2025-09-27T10:39:03.120+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 235.27it/s]
+[2025-09-27T10:39:03.135+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 178.81it/s]
+[2025-09-27T10:39:03.136+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 175.75it/s]
+[2025-09-27T10:39:03.136+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 175.16it/s]
+[2025-09-27T10:39:03.137+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 174.53it/s]
+[2025-09-27T10:39:03.143+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.143+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.144+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 3470.67it/s]
+[2025-09-27T10:39:03.145+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 1085.90it/s]
+[2025-09-27T10:39:03.157+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 295.36it/s] 
+[2025-09-27T10:39:03.158+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 268.81it/s]
+[2025-09-27T10:39:03.159+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 325.30it/s]
+[2025-09-27T10:39:03.160+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 304.34it/s]
+[2025-09-27T10:39:03.172+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 247.84it/s]
+[2025-09-27T10:39:03.173+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 239.70it/s]
+[2025-09-27T10:39:03.187+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 184.40it/s]
+[2025-09-27T10:39:03.188+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 181.57it/s]
+[2025-09-27T10:39:03.188+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 181.08it/s]
+[2025-09-27T10:39:03.188+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 180.62it/s]
+[2025-09-27T10:39:03.197+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.198+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.198+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2217.45it/s]
+[2025-09-27T10:39:03.200+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 894.59it/s] 
+[2025-09-27T10:39:03.211+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 310.03it/s]
+[2025-09-27T10:39:03.212+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 280.72it/s]
+[2025-09-27T10:39:03.212+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 337.53it/s]
+[2025-09-27T10:39:03.214+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 309.90it/s]
+[2025-09-27T10:39:03.227+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 239.44it/s]
+[2025-09-27T10:39:03.228+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 227.13it/s]
+[2025-09-27T10:39:03.245+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 169.66it/s]
+[2025-09-27T10:39:03.246+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 166.82it/s]
+[2025-09-27T10:39:03.246+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 166.29it/s]
+[2025-09-27T10:39:03.246+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 165.85it/s]
+[2025-09-27T10:39:03.253+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.253+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.254+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2158.67it/s]
+[2025-09-27T10:39:03.256+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 792.57it/s] 
+[2025-09-27T10:39:03.270+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 242.38it/s]
+[2025-09-27T10:39:03.271+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 223.03it/s]
+[2025-09-27T10:39:03.272+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 271.88it/s]
+[2025-09-27T10:39:03.273+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 258.21it/s]
+[2025-09-27T10:39:03.285+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 224.47it/s]
+[2025-09-27T10:39:03.286+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 217.74it/s]
+[2025-09-27T10:39:03.301+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 167.48it/s]
+[2025-09-27T10:39:03.302+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 165.18it/s]
+[2025-09-27T10:39:03.302+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 164.77it/s]
+[2025-09-27T10:39:03.302+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 164.25it/s]
+[2025-09-27T10:39:03.309+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.309+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.310+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 3089.73it/s]
+[2025-09-27T10:39:03.311+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 1026.51it/s]
+[2025-09-27T10:39:03.324+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 265.02it/s] 
+[2025-09-27T10:39:03.326+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 242.27it/s]
+[2025-09-27T10:39:03.326+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 294.32it/s]
+[2025-09-27T10:39:03.327+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 276.10it/s]
+[2025-09-27T10:39:03.339+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 237.78it/s]
+[2025-09-27T10:39:03.339+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 231.24it/s]
+[2025-09-27T10:39:03.354+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 177.32it/s]
+[2025-09-27T10:39:03.355+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 174.45it/s]
+[2025-09-27T10:39:03.355+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 173.95it/s]
+[2025-09-27T10:39:03.355+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 173.51it/s]
+[2025-09-27T10:39:03.364+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.364+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.365+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2017.95it/s]
+[2025-09-27T10:39:03.367+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 740.19it/s] 
+[2025-09-27T10:39:03.379+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 260.78it/s]
+[2025-09-27T10:39:03.381+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 233.81it/s]
+[2025-09-27T10:39:03.382+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 282.50it/s]
+[2025-09-27T10:39:03.383+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 265.75it/s]
+[2025-09-27T10:39:03.396+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 220.13it/s]
+[2025-09-27T10:39:03.397+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 213.27it/s]
+[2025-09-27T10:39:03.412+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 167.69it/s]
+[2025-09-27T10:39:03.412+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 165.31it/s]
+[2025-09-27T10:39:03.412+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 164.90it/s]
+[2025-09-27T10:39:03.413+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 164.51it/s]
+[2025-09-27T10:39:03.419+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.420+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.420+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2582.70it/s]
+[2025-09-27T10:39:03.422+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 890.23it/s] 
+[2025-09-27T10:39:03.436+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 239.89it/s]
+[2025-09-27T10:39:03.438+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 213.08it/s]
+[2025-09-27T10:39:03.439+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 258.38it/s]
+[2025-09-27T10:39:03.440+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 245.82it/s]
+[2025-09-27T10:39:03.452+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 215.71it/s]
+[2025-09-27T10:39:03.453+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 210.05it/s]
+[2025-09-27T10:39:03.472+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 152.50it/s]
+[2025-09-27T10:39:03.473+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 150.53it/s]
+[2025-09-27T10:39:03.473+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 150.16it/s]
+[2025-09-27T10:39:03.473+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 149.75it/s]
+[2025-09-27T10:39:03.480+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.480+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.481+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2262.91it/s]
+[2025-09-27T10:39:03.483+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 864.63it/s] 
+[2025-09-27T10:39:03.497+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 247.33it/s]
+[2025-09-27T10:39:03.498+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 221.54it/s]
+[2025-09-27T10:39:03.499+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 270.11it/s]
+[2025-09-27T10:39:03.500+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 255.72it/s]
+[2025-09-27T10:39:03.512+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 221.12it/s]
+[2025-09-27T10:39:03.513+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 215.17it/s]
+[2025-09-27T10:39:03.528+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 168.76it/s]
+[2025-09-27T10:39:03.529+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 165.59it/s]
+[2025-09-27T10:39:03.529+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 164.93it/s]
+[2025-09-27T10:39:03.529+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 164.42it/s]
+[2025-09-27T10:39:03.536+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.537+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.537+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 2271.49it/s]
+[2025-09-27T10:39:03.539+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 915.89it/s] 
+[2025-09-27T10:39:03.551+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 282.82it/s]
+[2025-09-27T10:39:03.552+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 255.15it/s]
+[2025-09-27T10:39:03.553+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 307.63it/s]
+[2025-09-27T10:39:03.554+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 288.78it/s]
+[2025-09-27T10:39:03.567+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 234.41it/s]
+[2025-09-27T10:39:03.567+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 227.01it/s]
+[2025-09-27T10:39:03.583+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 171.04it/s]
+[2025-09-27T10:39:03.584+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 168.48it/s]
+[2025-09-27T10:39:03.584+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 168.03it/s]
+[2025-09-27T10:39:03.584+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 167.46it/s]
+[2025-09-27T10:39:03.591+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.591+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/8 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.592+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 3401.71it/s]
+[2025-09-27T10:39:03.593+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  25%|##5       | 2/8 [00:00<00:00, 1054.11it/s]
+[2025-09-27T10:39:03.605+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 293.74it/s] 
+[2025-09-27T10:39:03.606+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  50%|#####     | 4/8 [00:00<00:00, 267.37it/s]
+[2025-09-27T10:39:03.607+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 324.10it/s]
+[2025-09-27T10:39:03.608+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  62%|######2   | 5/8 [00:00<00:00, 304.26it/s]
+[2025-09-27T10:39:03.620+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 244.35it/s]
+[2025-09-27T10:39:03.621+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  88%|########7 | 7/8 [00:00<00:00, 236.53it/s]
+[2025-09-27T10:39:03.637+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 175.97it/s]
+[2025-09-27T10:39:03.638+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 173.25it/s]
+[2025-09-27T10:39:03.638+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 172.69it/s]
+[2025-09-27T10:39:03.638+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 8/8 [00:00<00:00, 172.19it/s]
+[2025-09-27T10:39:03.650+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.650+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.651+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 1894.02it/s]
+[2025-09-27T10:39:03.654+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 501.68it/s] 
+[2025-09-27T10:39:03.667+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 243.50it/s]
+[2025-09-27T10:39:03.669+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 209.00it/s]
+[2025-09-27T10:39:03.670+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 298.94it/s]
+[2025-09-27T10:39:03.672+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 271.59it/s]
+[2025-09-27T10:39:03.686+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 253.29it/s]
+[2025-09-27T10:39:03.687+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 242.27it/s]
+[2025-09-27T10:39:03.707+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 194.90it/s]
+[2025-09-27T10:39:03.708+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 191.16it/s]
+[2025-09-27T10:39:03.708+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 190.72it/s]
+[2025-09-27T10:39:03.708+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 190.29it/s]
+[2025-09-27T10:39:03.723+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.723+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.724+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 2393.33it/s]
+[2025-09-27T10:39:03.726+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 596.54it/s] 
+[2025-09-27T10:39:03.738+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 269.54it/s]
+[2025-09-27T10:39:03.740+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 231.57it/s]
+[2025-09-27T10:39:03.741+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 330.37it/s]
+[2025-09-27T10:39:03.743+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 298.13it/s]
+[2025-09-27T10:39:03.757+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 268.07it/s]
+[2025-09-27T10:39:03.758+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 256.67it/s]
+[2025-09-27T10:39:03.779+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 195.39it/s]
+[2025-09-27T10:39:03.780+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 191.25it/s]
+[2025-09-27T10:39:03.781+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 190.66it/s]
+[2025-09-27T10:39:03.781+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 190.24it/s]
+[2025-09-27T10:39:03.793+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.793+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.795+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 1428.82it/s]
+[2025-09-27T10:39:03.798+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 482.41it/s] 
+[2025-09-27T10:39:03.809+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 260.16it/s]
+[2025-09-27T10:39:03.811+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 223.39it/s]
+[2025-09-27T10:39:03.812+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 321.00it/s]
+[2025-09-27T10:39:03.814+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 291.86it/s]
+[2025-09-27T10:39:03.829+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 254.15it/s]
+[2025-09-27T10:39:03.830+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 243.74it/s]
+[2025-09-27T10:39:03.850+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 195.77it/s]
+[2025-09-27T10:39:03.851+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 191.86it/s]
+[2025-09-27T10:39:03.851+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 191.40it/s]
+[2025-09-27T10:39:03.851+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 190.88it/s]
+[2025-09-27T10:39:03.866+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.866+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.867+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 2465.06it/s]
+[2025-09-27T10:39:03.870+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 594.47it/s] 
+[2025-09-27T10:39:03.881+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 279.35it/s]
+[2025-09-27T10:39:03.884+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 231.72it/s]
+[2025-09-27T10:39:03.885+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 327.09it/s]
+[2025-09-27T10:39:03.887+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 290.64it/s]
+[2025-09-27T10:39:03.901+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 257.86it/s]
+[2025-09-27T10:39:03.903+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 247.70it/s]
+[2025-09-27T10:39:03.924+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 190.38it/s]
+[2025-09-27T10:39:03.925+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 186.12it/s]
+[2025-09-27T10:39:03.926+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 185.49it/s]
+[2025-09-27T10:39:03.926+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 185.07it/s]
+[2025-09-27T10:39:03.939+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.939+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:03.940+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 2159.23it/s]
+[2025-09-27T10:39:03.943+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 584.98it/s] 
+[2025-09-27T10:39:03.954+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 264.83it/s]
+[2025-09-27T10:39:03.957+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 224.87it/s]
+[2025-09-27T10:39:03.958+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 322.36it/s]
+[2025-09-27T10:39:03.960+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 292.78it/s]
+[2025-09-27T10:39:03.975+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 251.15it/s]
+[2025-09-27T10:39:03.976+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 241.50it/s]
+[2025-09-27T10:39:03.998+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 185.53it/s]
+[2025-09-27T10:39:04.000+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 182.05it/s]
+[2025-09-27T10:39:04.000+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 181.61it/s]
+[2025-09-27T10:39:04.000+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 181.14it/s]
+[2025-09-27T10:39:04.012+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:04.012+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/11 [00:00<?, ?it/s]
+[2025-09-27T10:39:04.013+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 2465.79it/s]
+[2025-09-27T10:39:04.015+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  18%|#8        | 2/11 [00:00<00:00, 598.80it/s] 
+[2025-09-27T10:39:04.027+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 275.94it/s]
+[2025-09-27T10:39:04.031+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  36%|###6      | 4/11 [00:00<00:00, 216.69it/s]
+[2025-09-27T10:39:04.032+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 305.75it/s]
+[2025-09-27T10:39:04.034+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  55%|#####4    | 6/11 [00:00<00:00, 274.91it/s]
+[2025-09-27T10:39:04.048+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 253.25it/s]
+[2025-09-27T10:39:04.049+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  82%|########1 | 9/11 [00:00<00:00, 241.63it/s]
+[2025-09-27T10:39:04.071+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 187.50it/s]
+[2025-09-27T10:39:04.072+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 183.97it/s]
+[2025-09-27T10:39:04.072+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 183.46it/s]
+[2025-09-27T10:39:04.072+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 11/11 [00:00<00:00, 183.01it/s]
+[2025-09-27T10:39:04.075+0545] {validator.py:1461} INFO - 	29 expectation(s) included in expectation_suite.
+[2025-09-27T10:39:04.081+0545] {validator.py:1461} INFO - 	29 expectation(s) included in expectation_suite.
+[2025-09-27T10:39:04.266+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/116 [00:00<?, ?it/s]
+[2025-09-27T10:39:04.266+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/116 [00:00<?, ?it/s]
+[2025-09-27T10:39:04.267+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   2%|1         | 2/116 [00:00<00:00, 2036.07it/s]
+[2025-09-27T10:39:04.306+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   2%|1         | 2/116 [00:00<00:02, 51.21it/s]  
+[2025-09-27T10:39:04.317+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   3%|3         | 4/116 [00:00<00:01, 79.25it/s]
+[2025-09-27T10:39:04.354+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:   3%|3         | 4/116 [00:00<00:02, 45.67it/s]
+[2025-09-27T10:39:04.363+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  28%|##7       | 32/116 [00:00<00:00, 332.36it/s]
+[2025-09-27T10:39:04.401+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  28%|##7       | 32/116 [00:00<00:00, 237.69it/s]
+[2025-09-27T10:39:04.402+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  28%|##7       | 32/116 [00:00<00:00, 237.69it/s]
+[2025-09-27T10:39:04.733+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  76%|#######5  | 88/116 [00:00<00:00, 183.80it/s]
+[2025-09-27T10:39:04.734+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  76%|#######5  | 88/116 [00:00<00:00, 183.80it/s]
+[2025-09-27T10:39:04.752+0545] {logging_mixin.py:190} WARNING - Calculating Metrics:  76%|#######5  | 88/116 [00:00<00:00, 183.80it/s]
+[2025-09-27T10:39:04.904+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 116/116 [00:00<00:00, 176.51it/s]
+[2025-09-27T10:39:04.905+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 116/116 [00:00<00:00, 176.51it/s]
+[2025-09-27T10:39:04.917+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 116/116 [00:00<00:00, 176.51it/s]
+[2025-09-27T10:39:04.917+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 116/116 [00:00<00:00, 176.51it/s]
+[2025-09-27T10:39:04.917+0545] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 116/116 [00:00<00:00, 178.28it/s]
+[2025-09-27T10:39:04.951+0545] {logging_mixin.py:190} INFO -  Data validation PASSED.
+[2025-09-27T10:39:04.952+0545] {python.py:240} INFO - Done. Returned value was: {'status': 'success', 'checked_rows': 29}
+[2025-09-27T10:39:04.970+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-27T10:39:04.971+0545] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=mlops_diabetes_pipeline, task_id=validate_data, run_id=manual__2025-09-27T04:53:18.328632+00:00, execution_date=20250927T045318, start_date=20250927T045401, end_date=20250927T045404
+[2025-09-27T10:39:04.992+0545] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-27T10:39:04.992+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-27T10:39:04.993+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline queued_at:2025-09-27 04:53:18.336830+00:00
+[2025-09-27T10:39:04.993+0545] {logging_mixin.py:190} INFO - Task hostname:ashok-Nitro-ANV16-41 operator:PythonOperator
+[2025-09-27T10:39:05.024+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-27T10:39:05.041+0545] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-27T10:39:05.049+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

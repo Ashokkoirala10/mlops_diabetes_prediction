@@ -1,0 +1,30 @@
+[2025-09-04T18:22:49.298+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-04T18:22:49.304+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: start_diabetes_stack.docker_exec manual__2025-09-04T12:37:41.653179+00:00 [queued]>
+[2025-09-04T18:22:49.307+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: start_diabetes_stack.docker_exec manual__2025-09-04T12:37:41.653179+00:00 [queued]>
+[2025-09-04T18:22:49.307+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-04T18:22:49.319+0545] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): docker_exec> on 2025-09-04 12:37:41.653179+00:00
+[2025-09-04T18:22:49.325+0545] {standard_task_runner.py:72} INFO - Started process 148935 to run task
+[2025-09-04T18:22:49.328+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'start_diabetes_stack', 'docker_exec', 'manual__2025-09-04T12:37:41.653179+00:00', '--job-id', '305', '--raw', '--subdir', 'DAGS_FOLDER/bash_operator.py', '--cfg-path', '/tmp/tmpay9no2bm']
+[2025-09-04T18:22:49.328+0545] {standard_task_runner.py:105} INFO - Job 305: Subtask docker_exec
+[2025-09-04T18:22:49.352+0545] {task_command.py:467} INFO - Running <TaskInstance: start_diabetes_stack.docker_exec manual__2025-09-04T12:37:41.653179+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-04T18:22:49.392+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ashok' AIRFLOW_CTX_DAG_ID='start_diabetes_stack' AIRFLOW_CTX_TASK_ID='docker_exec' AIRFLOW_CTX_EXECUTION_DATE='2025-09-04T12:37:41.653179+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-04T12:37:41.653179+00:00'
+[2025-09-04T18:22:49.393+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-04T18:22:49.393+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-04T18:22:49.393+0545] {logging_mixin.py:190} INFO - Current task name:docker_exec state:running start_date:2025-09-04 12:37:49.304959+00:00
+[2025-09-04T18:22:49.393+0545] {logging_mixin.py:190} INFO - Dag name:start_diabetes_stack and current dag run status:running
+[2025-09-04T18:22:49.393+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-04T18:22:49.394+0545] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-09-04T18:22:49.394+0545] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'docker exec -i mcs_container mariadb -u ashok -p"Docker@12345!" -h 127.0.0.1 -P 3306 diabetes_ml -e "SELECT 1;"']
+[2025-09-04T18:22:49.405+0545] {subprocess.py:99} INFO - Output:
+[2025-09-04T18:22:49.462+0545] {subprocess.py:106} INFO - 1
+[2025-09-04T18:22:49.463+0545] {subprocess.py:106} INFO - 1
+[2025-09-04T18:22:49.465+0545] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-09-04T18:22:49.481+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-04T18:22:49.481+0545] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=start_diabetes_stack, task_id=docker_exec, run_id=manual__2025-09-04T12:37:41.653179+00:00, execution_date=20250904T123741, start_date=20250904T123749, end_date=20250904T123749
+[2025-09-04T18:22:49.498+0545] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-04T18:22:49.498+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-04T18:22:49.499+0545] {logging_mixin.py:190} INFO - Dag name:start_diabetes_stack queued_at:2025-09-04 12:37:41.661560+00:00
+[2025-09-04T18:22:49.499+0545] {logging_mixin.py:190} INFO - Task hostname:ashok-Nitro-ANV16-41 operator:BashOperator
+[2025-09-04T18:22:49.540+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-04T18:22:49.551+0545] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-04T18:22:49.558+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

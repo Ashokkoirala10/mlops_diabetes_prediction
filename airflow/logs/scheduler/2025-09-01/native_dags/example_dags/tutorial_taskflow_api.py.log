@@ -1,0 +1,36 @@
+[2025-09-01T17:22:28.736+0545] {processor.py:186} INFO - Started process (PID=80742) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T17:22:28.737+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2025-09-01T17:22:28.738+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:28.738+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T17:22:28.744+0545] {processor.py:925} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T17:22:28.811+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:28.810+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:tutorial_taskflow_api
+[2025-09-01T17:22:28.824+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:28.823+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:tutorial_taskflow_api
+[2025-09-01T17:22:28.834+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:28.834+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:tutorial_taskflow_api
+[2025-09-01T17:22:28.853+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:28.853+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:tutorial_taskflow_api
+[2025-09-01T17:22:28.864+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:28.864+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:tutorial_taskflow_api
+[2025-09-01T17:22:28.875+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:28.875+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:tutorial_taskflow_api
+[2025-09-01T17:22:28.885+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:28.885+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:tutorial_taskflow_api
+[2025-09-01T17:22:28.885+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:28.885+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T17:22:28.894+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:28.894+0545] {dag.py:3262} INFO - Creating ORM DAG for tutorial_taskflow_api
+[2025-09-01T17:22:28.894+0545] {logging_mixin.py:190} INFO - [2025-09-01T17:22:28.894+0545] {dag.py:4180} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2025-09-01T17:22:28.909+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.177 seconds
+[2025-09-01T20:39:29.622+0545] {processor.py:186} INFO - Started process (PID=150145) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T20:39:29.625+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2025-09-01T20:39:29.629+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:29.629+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T20:39:29.639+0545] {processor.py:925} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T20:39:29.657+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:29.656+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:39:29.671+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:29.671+0545] {dag.py:4180} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2025-09-01T20:39:29.698+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.084 seconds
+[2025-09-01T20:40:40.602+0545] {processor.py:186} INFO - Started process (PID=151123) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T20:40:40.605+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2025-09-01T20:40:40.608+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:40.607+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T20:40:40.617+0545] {processor.py:925} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T20:40:40.636+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:40.635+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:40.649+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:40.649+0545] {dag.py:4180} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2025-09-01T20:40:40.674+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.079 seconds
+[2025-09-01T20:44:45.553+0545] {processor.py:186} INFO - Started process (PID=153809) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T20:44:45.555+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2025-09-01T20:44:45.559+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:45.558+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T20:44:45.568+0545] {processor.py:925} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-09-01T20:44:45.588+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:45.588+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:44:45.603+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:44:45.602+0545] {dag.py:4180} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2025-09-01T20:44:45.628+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.081 seconds

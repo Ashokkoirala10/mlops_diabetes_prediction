@@ -1,0 +1,22 @@
+[2025-09-01T20:39:40.503+0545] {processor.py:186} INFO - Started process (PID=150280) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-01T20:39:40.504+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py for tasks to queue
+[2025-09-01T20:39:40.507+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:40.506+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-01T20:39:40.518+0545] {processor.py:925} INFO - DAG(s) 'example_short_circuit_decorator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-01T20:39:40.630+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:40.629+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_short_circuit_decorator
+[2025-09-01T20:39:40.648+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:40.647+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_short_circuit_decorator
+[2025-09-01T20:39:40.663+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:40.662+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_short_circuit_decorator
+[2025-09-01T20:39:40.687+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:40.686+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_short_circuit_decorator
+[2025-09-01T20:39:40.700+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:40.700+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_short_circuit_decorator
+[2025-09-01T20:39:40.713+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:40.713+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_short_circuit_decorator
+[2025-09-01T20:39:40.727+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:40.726+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_short_circuit_decorator
+[2025-09-01T20:39:40.727+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:40.727+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:39:40.743+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:40.743+0545] {dag.py:3262} INFO - Creating ORM DAG for example_short_circuit_decorator
+[2025-09-01T20:39:40.744+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:40.744+0545] {dag.py:4180} INFO - Setting next_dagrun for example_short_circuit_decorator to None, run_after=None
+[2025-09-01T20:39:40.770+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py took 0.274 seconds
+[2025-09-01T20:40:50.234+0545] {processor.py:186} INFO - Started process (PID=151231) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-01T20:40:50.237+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py for tasks to queue
+[2025-09-01T20:40:50.239+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:50.239+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-01T20:40:50.248+0545] {processor.py:925} INFO - DAG(s) 'example_short_circuit_decorator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-01T20:40:50.266+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:50.266+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:50.277+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:50.276+0545] {dag.py:4180} INFO - Setting next_dagrun for example_short_circuit_decorator to None, run_after=None
+[2025-09-01T20:40:50.300+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py took 0.073 seconds

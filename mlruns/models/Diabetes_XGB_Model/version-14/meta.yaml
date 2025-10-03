@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1757483816220
+current_stage: None
+description: ''
+last_updated_timestamp: 1757483816220
+name: Diabetes_XGB_Model
+run_id: bc0f782ad7c34d9781b54392b130936d
+run_link: ''
+source: mlflow-artifacts:/316788938642533833/bc0f782ad7c34d9781b54392b130936d/artifacts/xgb_model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/316788938642533833/bc0f782ad7c34d9781b54392b130936d/artifacts/xgb_model
+user_id: null
+version: 14

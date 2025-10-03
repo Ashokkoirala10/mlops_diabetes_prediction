@@ -1,0 +1,22 @@
+[2025-09-01T20:39:35.963+0545] {processor.py:186} INFO - Started process (PID=150226) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2025-09-01T20:39:35.964+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2025-09-01T20:39:35.966+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:35.966+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2025-09-01T20:39:35.975+0545] {processor.py:925} INFO - DAG(s) 'example_trigger_target_dag' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2025-09-01T20:39:36.093+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.092+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_trigger_target_dag
+[2025-09-01T20:39:36.113+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.112+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_trigger_target_dag
+[2025-09-01T20:39:36.130+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.129+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_trigger_target_dag
+[2025-09-01T20:39:36.157+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.156+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_trigger_target_dag
+[2025-09-01T20:39:36.173+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.173+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_trigger_target_dag
+[2025-09-01T20:39:36.187+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.186+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_trigger_target_dag
+[2025-09-01T20:39:36.202+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.201+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_trigger_target_dag
+[2025-09-01T20:39:36.202+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.202+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:39:36.214+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.214+0545] {dag.py:3262} INFO - Creating ORM DAG for example_trigger_target_dag
+[2025-09-01T20:39:36.214+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:39:36.214+0545] {dag.py:4180} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2025-09-01T20:39:36.239+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.284 seconds
+[2025-09-01T20:40:46.931+0545] {processor.py:186} INFO - Started process (PID=151193) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2025-09-01T20:40:46.934+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2025-09-01T20:40:46.937+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:46.937+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2025-09-01T20:40:46.947+0545] {processor.py:925} INFO - DAG(s) 'example_trigger_target_dag' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2025-09-01T20:40:46.963+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:46.963+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:46.976+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:46.976+0545] {dag.py:4180} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2025-09-01T20:40:47.002+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.078 seconds

@@ -1,0 +1,959 @@
+[2025-09-05T10:30:09.467+0545] {processor.py:186} INFO - Started process (PID=9371) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:30:09.468+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:30:09.469+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:30:09.469+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:30:09.480+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:30:09.750+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:30:09.750+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:30:09.755+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:30:09.755+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:30:09.774+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.311 seconds
+[2025-09-05T10:31:15.812+0545] {processor.py:186} INFO - Started process (PID=10512) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:31:15.814+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:31:15.816+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:31:15.816+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:31:15.827+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:31:15.846+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:31:15.846+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:31:15.860+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:31:15.860+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:31:15.888+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.084 seconds
+[2025-09-05T10:31:49.075+0545] {processor.py:186} INFO - Started process (PID=10914) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:31:49.077+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:31:49.080+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:31:49.079+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:31:49.097+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:31:49.208+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:31:49.207+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:31:49.221+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:31:49.221+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:31:49.251+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.186 seconds
+[2025-09-05T10:32:19.129+0545] {processor.py:186} INFO - Started process (PID=11119) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:32:19.132+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:32:19.135+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:32:19.134+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:32:19.142+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:32:19.141+0545] {dagbag.py:387} ERROR - Failed to import: /home/ashok/mlops_project/airflow/dags/bash_operator.py
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ashok/mlops_project/airflow/dags/bash_operator.py", line 58, in <module>
+    activate_env >> start_redis >> start_docker >> docker_exec  >> start_ml
+NameError: name 'start_ml' is not defined
+[2025-09-05T10:32:19.142+0545] {processor.py:927} WARNING - No viable dags retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:32:19.168+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.046 seconds
+[2025-09-05T10:32:51.528+0545] {processor.py:186} INFO - Started process (PID=11344) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:32:51.531+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:32:51.533+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:32:51.533+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:32:51.543+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:32:51.648+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:32:51.647+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:32:51.658+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:32:51.657+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:32:51.699+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.178 seconds
+[2025-09-05T10:33:23.317+0545] {processor.py:186} INFO - Started process (PID=11595) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:33:23.320+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:33:23.323+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:33:23.323+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:33:23.332+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:33:23.349+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:33:23.349+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:33:23.361+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:33:23.361+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:33:23.390+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T10:34:02.815+0545] {processor.py:186} INFO - Started process (PID=11873) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:34:02.817+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:34:02.818+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:34:02.818+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:34:02.824+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:34:02.927+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:34:02.927+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:34:02.932+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:34:02.932+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:34:02.950+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.140 seconds
+[2025-09-05T10:35:11.039+0545] {processor.py:186} INFO - Started process (PID=13142) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:35:11.042+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:35:11.046+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:35:11.045+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:35:11.059+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:35:11.082+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:35:11.082+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:35:11.099+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:35:11.098+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:35:11.132+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.102 seconds
+[2025-09-05T10:35:49.306+0545] {processor.py:186} INFO - Started process (PID=13513) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:35:49.309+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:35:49.312+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:35:49.311+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:35:49.322+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:35:49.340+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:35:49.339+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:35:49.352+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:35:49.351+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:35:49.379+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T10:36:20.637+0545] {processor.py:186} INFO - Started process (PID=13743) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:36:20.639+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:36:20.642+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:36:20.642+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:36:20.653+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:36:20.672+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:36:20.671+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:36:20.686+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:36:20.685+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:36:20.711+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.082 seconds
+[2025-09-05T10:37:22.989+0545] {processor.py:186} INFO - Started process (PID=14300) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:37:22.991+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:37:22.993+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:37:22.993+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:37:23.000+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:37:23.015+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:37:23.015+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:37:23.027+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:37:23.027+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:37:23.051+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.068 seconds
+[2025-09-05T10:37:57.240+0545] {processor.py:186} INFO - Started process (PID=14546) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:37:57.242+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:37:57.245+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:37:57.245+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:37:57.256+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:37:57.273+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:37:57.273+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:37:57.286+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:37:57.286+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:37:57.313+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.081 seconds
+[2025-09-05T10:38:29.612+0545] {processor.py:186} INFO - Started process (PID=14780) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:38:29.614+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:38:29.617+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:38:29.616+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:38:29.626+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:38:29.643+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:38:29.643+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:38:29.657+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:38:29.657+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:38:29.683+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T10:39:06.236+0545] {processor.py:186} INFO - Started process (PID=15030) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:39:06.237+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:39:06.239+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:39:06.238+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:39:06.245+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:39:06.385+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:39:06.385+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:39:06.390+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:39:06.390+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:39:06.411+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.179 seconds
+[2025-09-05T10:40:15.994+0545] {processor.py:186} INFO - Started process (PID=15956) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:40:15.996+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:40:15.999+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:40:15.999+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:40:16.010+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:40:16.028+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:40:16.027+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:40:16.040+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:40:16.039+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:40:16.067+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.082 seconds
+[2025-09-05T10:40:44.796+0545] {processor.py:186} INFO - Started process (PID=16180) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:40:44.797+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:40:44.798+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:40:44.798+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:40:44.807+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:40:44.954+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:40:44.953+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:40:44.959+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:40:44.959+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:40:44.980+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.188 seconds
+[2025-09-05T10:53:14.125+0545] {processor.py:186} INFO - Started process (PID=21173) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:53:14.126+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:53:14.127+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:53:14.127+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:53:14.134+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:53:14.291+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:53:14.290+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:53:14.296+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:53:14.296+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:53:14.314+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.193 seconds
+[2025-09-05T10:54:26.287+0545] {processor.py:186} INFO - Started process (PID=22089) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:54:26.289+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:54:26.291+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:54:26.291+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:54:26.299+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:54:26.313+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:54:26.313+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:54:26.324+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:54:26.324+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:54:26.348+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.068 seconds
+[2025-09-05T10:55:08.042+0545] {processor.py:186} INFO - Started process (PID=22457) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:55:08.043+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:55:08.044+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:55:08.044+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:55:08.050+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:55:08.192+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:55:08.192+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:55:08.198+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:55:08.198+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:55:08.216+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.178 seconds
+[2025-09-05T10:56:23.367+0545] {processor.py:186} INFO - Started process (PID=23426) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:56:23.370+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:56:23.373+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:56:23.372+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:56:23.385+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:56:23.408+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:56:23.408+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:56:23.425+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:56:23.425+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:56:23.457+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.099 seconds
+[2025-09-05T10:57:01.905+0545] {processor.py:186} INFO - Started process (PID=23743) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:57:01.907+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:57:01.909+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:57:01.909+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:57:01.919+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:57:01.939+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:57:01.938+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:57:01.951+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:57:01.950+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:57:01.975+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T10:57:36.648+0545] {processor.py:186} INFO - Started process (PID=24031) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:57:36.651+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:57:36.654+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:57:36.653+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:57:36.663+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:57:36.678+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:57:36.678+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:57:36.689+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:57:36.689+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:57:36.714+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.072 seconds
+[2025-09-05T10:58:08.565+0545] {processor.py:186} INFO - Started process (PID=24312) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:58:08.569+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:58:08.572+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:58:08.571+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:58:08.582+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:58:08.602+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:58:08.602+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:58:08.615+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:58:08.615+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:58:08.642+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.085 seconds
+[2025-09-05T10:58:41.424+0545] {processor.py:186} INFO - Started process (PID=24773) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:58:41.427+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:58:41.430+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:58:41.430+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:58:41.440+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:58:41.457+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:58:41.457+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:58:41.470+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:58:41.470+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:58:41.496+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T10:59:14.695+0545] {processor.py:186} INFO - Started process (PID=25007) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:59:14.697+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:59:14.700+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:59:14.700+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:59:14.710+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:59:14.736+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:59:14.735+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:59:14.748+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:59:14.748+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:59:14.774+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.087 seconds
+[2025-09-05T10:59:45.580+0545] {processor.py:186} INFO - Started process (PID=25253) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:59:45.582+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T10:59:45.585+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:59:45.585+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:59:45.593+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T10:59:45.610+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:59:45.609+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T10:59:45.620+0545] {logging_mixin.py:190} INFO - [2025-09-05T10:59:45.620+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T10:59:45.644+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.070 seconds
+[2025-09-05T11:00:18.023+0545] {processor.py:186} INFO - Started process (PID=25493) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:00:18.026+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:00:18.028+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:00:18.028+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:00:18.038+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:00:18.056+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:00:18.056+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:00:18.068+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:00:18.068+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:00:18.095+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T11:00:50.641+0545] {processor.py:186} INFO - Started process (PID=25730) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:00:50.644+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:00:50.647+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:00:50.646+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:00:50.657+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:00:50.675+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:00:50.674+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:00:50.687+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:00:50.687+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:00:50.714+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.081 seconds
+[2025-09-05T11:01:52.482+0545] {processor.py:186} INFO - Started process (PID=26193) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:01:52.485+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:01:52.489+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:01:52.487+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:01:52.498+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:01:52.516+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:01:52.516+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:01:52.529+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:01:52.528+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:01:52.555+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T11:02:25.190+0545] {processor.py:186} INFO - Started process (PID=26464) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:02:25.193+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:02:25.196+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:02:25.195+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:02:25.206+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:02:25.223+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:02:25.223+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:02:25.235+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:02:25.235+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:02:25.260+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:03:27.298+0545] {processor.py:186} INFO - Started process (PID=26934) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:03:27.300+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:03:27.302+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:03:27.302+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:03:27.310+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:03:27.324+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:03:27.324+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:03:27.333+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:03:27.333+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:03:27.356+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.063 seconds
+[2025-09-05T11:04:00.858+0545] {processor.py:186} INFO - Started process (PID=27173) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:04:00.860+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:04:00.863+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:04:00.863+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:04:00.873+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:04:00.892+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:04:00.891+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:04:00.904+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:04:00.904+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:04:00.929+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T11:04:34.439+0545] {processor.py:186} INFO - Started process (PID=27457) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:04:34.442+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:04:34.445+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:04:34.445+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:04:34.456+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:04:34.473+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:04:34.473+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:04:34.486+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:04:34.485+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:04:34.514+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.082 seconds
+[2025-09-05T11:05:07.521+0545] {processor.py:186} INFO - Started process (PID=27688) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:05:07.523+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:05:07.526+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:05:07.526+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:05:07.536+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:05:07.554+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:05:07.554+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:05:07.566+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:05:07.566+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:05:07.593+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T11:05:40.328+0545] {processor.py:186} INFO - Started process (PID=27958) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:05:40.331+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:05:40.334+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:05:40.333+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:05:40.344+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:05:40.362+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:05:40.361+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:05:40.374+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:05:40.374+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:05:40.402+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.082 seconds
+[2025-09-05T11:06:42.189+0545] {processor.py:186} INFO - Started process (PID=28411) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:06:42.191+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:06:42.194+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:06:42.193+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:06:42.205+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:06:42.226+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:06:42.225+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:06:42.238+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:06:42.238+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:06:42.266+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.085 seconds
+[2025-09-05T11:07:43.277+0545] {processor.py:186} INFO - Started process (PID=29018) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:07:43.279+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:07:43.280+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:07:43.280+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:07:43.285+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:07:43.295+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:07:43.294+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:07:43.301+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:07:43.301+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:07:43.319+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.046 seconds
+[2025-09-05T11:08:13.437+0545] {processor.py:186} INFO - Started process (PID=29460) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:08:13.439+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:08:13.442+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:08:13.442+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:08:13.452+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:08:13.469+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:08:13.469+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:08:13.482+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:08:13.482+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:08:13.508+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:08:47.384+0545] {processor.py:186} INFO - Started process (PID=29787) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:08:47.387+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:08:47.390+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:08:47.389+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:08:47.400+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:08:47.418+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:08:47.417+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:08:47.430+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:08:47.430+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:08:47.456+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T11:09:18.927+0545] {processor.py:186} INFO - Started process (PID=30009) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:09:18.930+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:09:18.931+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:09:18.931+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:09:18.936+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:09:18.946+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:09:18.946+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:09:18.952+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:09:18.952+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:09:18.972+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.050 seconds
+[2025-09-05T11:10:21.345+0545] {processor.py:186} INFO - Started process (PID=30482) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:10:21.348+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:10:21.351+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:10:21.351+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:10:21.361+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:10:21.381+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:10:21.380+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:10:21.393+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:10:21.393+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:10:21.420+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.082 seconds
+[2025-09-05T11:10:55.369+0545] {processor.py:186} INFO - Started process (PID=30762) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:10:55.371+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:10:55.374+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:10:55.374+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:10:55.384+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:10:55.402+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:10:55.402+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:10:55.414+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:10:55.414+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:10:55.441+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T11:11:28.247+0545] {processor.py:186} INFO - Started process (PID=31028) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:11:28.249+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:11:28.252+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:11:28.252+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:11:28.262+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:11:28.280+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:11:28.280+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:11:28.294+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:11:28.293+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:11:28.320+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.081 seconds
+[2025-09-05T11:11:58.415+0545] {processor.py:186} INFO - Started process (PID=31233) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:11:58.417+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:11:58.420+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:11:58.419+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:11:58.430+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:11:58.448+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:11:58.448+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:11:58.460+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:11:58.460+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:11:58.487+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T11:12:32.522+0545] {processor.py:186} INFO - Started process (PID=31466) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:12:32.525+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:12:32.529+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:12:32.528+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:12:32.538+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:12:32.559+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:12:32.559+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:12:32.573+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:12:32.572+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:12:32.600+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.086 seconds
+[2025-09-05T11:13:04.088+0545] {processor.py:186} INFO - Started process (PID=31698) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:13:04.091+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:13:04.094+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:13:04.094+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:13:04.104+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:13:04.122+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:13:04.121+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:13:04.134+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:13:04.134+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:13:04.161+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T11:14:06.077+0545] {processor.py:186} INFO - Started process (PID=32167) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:14:06.080+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:14:06.083+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:14:06.083+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:14:06.093+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:14:06.111+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:14:06.111+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:14:06.124+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:14:06.124+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:14:06.150+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T11:14:40.424+0545] {processor.py:186} INFO - Started process (PID=32453) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:14:40.426+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:14:40.429+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:14:40.428+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:14:40.437+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:14:40.452+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:14:40.452+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:14:40.463+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:14:40.463+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:14:40.488+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.072 seconds
+[2025-09-05T11:15:11.105+0545] {processor.py:186} INFO - Started process (PID=32678) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:15:11.107+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:15:11.110+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:15:11.110+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:15:11.119+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:15:11.139+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:15:11.138+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:15:11.152+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:15:11.151+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:15:11.179+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.081 seconds
+[2025-09-05T11:15:42.411+0545] {processor.py:186} INFO - Started process (PID=32923) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:15:42.414+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:15:42.417+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:15:42.417+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:15:42.427+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:15:42.444+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:15:42.444+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:15:42.456+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:15:42.456+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:15:42.484+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.081 seconds
+[2025-09-05T11:16:16.826+0545] {processor.py:186} INFO - Started process (PID=33168) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:16:16.828+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:16:16.831+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:16:16.830+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:16:16.841+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:16:16.860+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:16:16.860+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:16:16.872+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:16:16.872+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:16:16.897+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:16:50.748+0545] {processor.py:186} INFO - Started process (PID=33402) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:16:50.750+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:16:50.752+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:16:50.752+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:16:50.763+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:16:50.782+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:16:50.781+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:16:50.794+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:16:50.794+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:16:50.821+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.081 seconds
+[2025-09-05T11:17:24.879+0545] {processor.py:186} INFO - Started process (PID=33687) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:17:24.880+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:17:24.883+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:17:24.883+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:17:24.894+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:17:24.913+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:17:24.912+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:17:24.926+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:17:24.925+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:17:24.950+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T11:17:58.064+0545] {processor.py:186} INFO - Started process (PID=33926) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:17:58.067+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:17:58.069+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:17:58.069+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:17:58.079+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:17:58.097+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:17:58.096+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:17:58.109+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:17:58.108+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:17:58.135+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:18:29.700+0545] {processor.py:186} INFO - Started process (PID=34152) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:18:29.702+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:18:29.705+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:18:29.705+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:18:29.714+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:18:29.733+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:18:29.733+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:18:29.745+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:18:29.745+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:18:29.772+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T11:19:06.419+0545] {processor.py:186} INFO - Started process (PID=34411) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:19:06.421+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:19:06.425+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:19:06.424+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:19:06.435+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:19:06.453+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:19:06.453+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:19:06.466+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:19:06.466+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:19:06.492+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T11:19:40.115+0545] {processor.py:186} INFO - Started process (PID=34696) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:19:40.118+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:19:40.121+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:19:40.121+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:19:40.132+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:19:40.150+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:19:40.150+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:19:40.163+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:19:40.163+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:19:40.191+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.083 seconds
+[2025-09-05T11:20:11.346+0545] {processor.py:186} INFO - Started process (PID=34915) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:20:11.348+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:20:11.351+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:20:11.350+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:20:11.361+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:20:11.379+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:20:11.379+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:20:11.393+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:20:11.393+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:20:11.421+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.083 seconds
+[2025-09-05T11:20:42.248+0545] {processor.py:186} INFO - Started process (PID=35156) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:20:42.250+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:20:42.252+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:20:42.252+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:20:42.262+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:20:42.279+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:20:42.279+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:20:42.292+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:20:42.292+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:20:42.318+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T11:21:13.321+0545] {processor.py:186} INFO - Started process (PID=35386) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:21:13.324+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:21:13.327+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:21:13.326+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:21:13.339+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:21:13.359+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:21:13.358+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:21:13.372+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:21:13.372+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:21:13.399+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.085 seconds
+[2025-09-05T11:21:45.617+0545] {processor.py:186} INFO - Started process (PID=35636) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:21:45.618+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:21:45.621+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:21:45.620+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:21:45.630+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:21:45.649+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:21:45.648+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:21:45.661+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:21:45.661+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:21:45.688+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T11:22:18.442+0545] {processor.py:186} INFO - Started process (PID=35872) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:22:18.445+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:22:18.448+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:22:18.447+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:22:18.457+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:22:18.474+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:22:18.474+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:22:18.488+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:22:18.488+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:22:18.515+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T11:23:19.799+0545] {processor.py:186} INFO - Started process (PID=36302) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:23:19.801+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:23:19.805+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:23:19.804+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:23:19.816+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:23:19.835+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:23:19.834+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:23:19.850+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:23:19.850+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:23:19.877+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.086 seconds
+[2025-09-05T11:23:52.384+0545] {processor.py:186} INFO - Started process (PID=36552) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:23:52.386+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:23:52.389+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:23:52.389+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:23:52.400+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:23:52.419+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:23:52.419+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:23:52.431+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:23:52.431+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:23:52.703+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.327 seconds
+[2025-09-05T11:24:30.280+0545] {processor.py:186} INFO - Started process (PID=36850) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:24:30.283+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:24:30.288+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:24:30.287+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:24:30.306+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:24:30.333+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:24:30.332+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:24:30.355+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:24:30.355+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:24:30.669+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.399 seconds
+[2025-09-05T11:24:53.722+0545] {processor.py:186} INFO - Started process (PID=37021) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:24:53.723+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:24:53.724+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:24:53.724+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:24:53.731+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:24:53.857+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:24:53.857+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:24:53.862+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:24:53.862+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:24:53.879+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.161 seconds
+[2025-09-05T11:25:55.491+0545] {processor.py:186} INFO - Started process (PID=37641) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:25:55.494+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:25:55.497+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:25:55.496+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:25:55.508+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:25:55.528+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:25:55.527+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:25:55.541+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:25:55.540+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:25:55.567+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.085 seconds
+[2025-09-05T11:26:35.301+0545] {processor.py:186} INFO - Started process (PID=38118) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:26:35.304+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:26:35.307+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:26:35.306+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:26:35.318+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:26:35.342+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:26:35.341+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:26:35.357+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:26:35.357+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:26:35.387+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.095 seconds
+[2025-09-05T11:27:15.903+0545] {processor.py:186} INFO - Started process (PID=38476) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:27:15.905+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:27:15.908+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:27:15.907+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:27:15.918+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:27:15.935+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:27:15.935+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:27:15.948+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:27:15.948+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:27:15.976+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T11:27:51.521+0545] {processor.py:186} INFO - Started process (PID=38857) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:27:51.524+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:27:51.526+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:27:51.526+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:27:51.536+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:27:51.636+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:27:51.635+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:27:51.645+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:27:51.645+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:27:51.675+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.161 seconds
+[2025-09-05T11:28:02.172+0545] {processor.py:186} INFO - Started process (PID=38951) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:28:02.174+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:28:02.175+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:28:02.175+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:28:02.181+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:28:02.186+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:28:02.186+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:28:02.285+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:28:02.285+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:28:02.304+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.136 seconds
+[2025-09-05T11:29:40.595+0545] {processor.py:186} INFO - Started process (PID=40026) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:29:40.596+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:29:40.597+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:29:40.597+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:29:40.603+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:29:40.624+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:29:40.624+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:29:40.632+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:29:40.632+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:29:40.650+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.062 seconds
+[2025-09-05T11:31:19.718+0545] {processor.py:186} INFO - Started process (PID=40941) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:31:19.719+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:31:19.721+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:31:19.721+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:31:19.727+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:31:19.869+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:31:19.868+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:31:19.873+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:31:19.873+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:31:19.892+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.178 seconds
+[2025-09-05T11:33:18.246+0545] {processor.py:186} INFO - Started process (PID=42187) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:33:18.247+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:33:18.248+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:33:18.248+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:33:18.252+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:33:18.266+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:33:18.265+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:33:18.272+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:33:18.272+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:33:18.289+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.047 seconds
+[2025-09-05T11:35:23.128+0545] {processor.py:186} INFO - Started process (PID=43305) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:35:23.130+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:35:23.131+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:35:23.131+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:35:23.136+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:35:23.158+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:35:23.158+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:35:23.168+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:35:23.168+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:35:23.191+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.070 seconds
+[2025-09-05T11:35:59.073+0545] {processor.py:186} INFO - Started process (PID=43578) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:35:59.074+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:35:59.075+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:35:59.075+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:35:59.082+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:35:59.225+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:35:59.225+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:35:59.230+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:35:59.230+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:35:59.247+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.179 seconds
+[2025-09-05T11:37:16.063+0545] {processor.py:186} INFO - Started process (PID=44473) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:37:16.066+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:37:16.069+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:37:16.068+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:37:16.079+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:37:16.096+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:37:16.096+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:37:16.108+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:37:16.108+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:37:16.136+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T11:37:51.220+0545] {processor.py:186} INFO - Started process (PID=44754) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:37:51.223+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:37:51.225+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:37:51.225+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:37:51.237+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:37:51.256+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:37:51.256+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:37:51.270+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:37:51.269+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:37:51.298+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.086 seconds
+[2025-09-05T11:38:24.320+0545] {processor.py:186} INFO - Started process (PID=45011) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:38:24.323+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:38:24.326+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:38:24.326+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:38:24.336+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:38:24.353+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:38:24.353+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:38:24.365+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:38:24.365+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:38:24.393+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.081 seconds
+[2025-09-05T11:38:54.742+0545] {processor.py:186} INFO - Started process (PID=45449) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:38:54.743+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:38:54.745+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:38:54.744+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:38:54.752+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:38:54.766+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:38:54.765+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:38:54.775+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:38:54.774+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:38:54.793+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.057 seconds
+[2025-09-05T11:39:27.534+0545] {processor.py:186} INFO - Started process (PID=45786) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:39:27.537+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:39:27.540+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:39:27.540+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:39:27.549+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:39:27.568+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:39:27.568+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:39:27.581+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:39:27.581+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:39:27.609+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.082 seconds
+[2025-09-05T11:39:58.290+0545] {processor.py:186} INFO - Started process (PID=46023) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:39:58.294+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:39:58.299+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:39:58.299+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:39:58.315+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:39:58.354+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:39:58.353+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:39:58.376+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:39:58.375+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:39:58.419+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.146 seconds
+[2025-09-05T11:40:31.974+0545] {processor.py:186} INFO - Started process (PID=46334) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:40:31.977+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:40:31.981+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:40:31.981+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:40:31.994+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:40:32.016+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:40:32.015+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:40:32.031+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:40:32.031+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:40:32.060+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.098 seconds
+[2025-09-05T11:41:05.270+0545] {processor.py:186} INFO - Started process (PID=46651) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:41:05.273+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:41:05.276+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:41:05.276+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:41:05.286+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:41:05.305+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:41:05.304+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:41:05.318+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:41:05.317+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:41:05.344+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.083 seconds
+[2025-09-05T11:41:39.353+0545] {processor.py:186} INFO - Started process (PID=46915) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:41:39.356+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:41:39.359+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:41:39.358+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:41:39.368+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:41:39.386+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:41:39.386+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:41:39.398+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:41:39.398+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:41:39.423+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:43:42.603+0545] {processor.py:186} INFO - Started process (PID=48056) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:43:42.605+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:43:42.606+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:43:42.606+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:43:42.611+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:43:42.628+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:43:42.628+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:43:42.636+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:43:42.635+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:43:42.654+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.056 seconds
+[2025-09-05T11:44:44.618+0545] {processor.py:186} INFO - Started process (PID=48548) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:44:44.621+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:44:44.623+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:44:44.622+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:44:44.629+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:44:44.647+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:44:44.647+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:44:44.658+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:44:44.658+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:44:44.685+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.075 seconds
+[2025-09-05T11:45:20.250+0545] {processor.py:186} INFO - Started process (PID=48837) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:45:20.253+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:45:20.255+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:45:20.255+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:45:20.261+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:45:20.280+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:45:20.279+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:45:20.291+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:45:20.291+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:45:20.318+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.075 seconds
+[2025-09-05T11:45:54.974+0545] {processor.py:186} INFO - Started process (PID=49078) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:45:54.976+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:45:54.978+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:45:54.977+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:45:54.984+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:45:55.002+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:45:55.002+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:45:55.014+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:45:55.014+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:45:55.040+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.074 seconds
+[2025-09-05T11:46:25.599+0545] {processor.py:186} INFO - Started process (PID=49305) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:46:25.600+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:46:25.602+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:46:25.601+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:46:25.608+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:46:25.627+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:46:25.626+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:46:25.639+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:46:25.638+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:46:25.666+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.074 seconds
+[2025-09-05T11:46:55.790+0545] {processor.py:186} INFO - Started process (PID=49550) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:46:55.792+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:46:55.794+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:46:55.794+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:46:55.800+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:46:55.819+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:46:55.818+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:46:55.830+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:46:55.830+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:46:55.857+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.075 seconds
+[2025-09-05T11:47:29.699+0545] {processor.py:186} INFO - Started process (PID=49820) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:47:29.700+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:47:29.702+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:47:29.701+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:47:29.708+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:47:29.726+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:47:29.726+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:47:29.738+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:47:29.738+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:47:29.765+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.073 seconds
+[2025-09-05T11:47:59.394+0545] {processor.py:186} INFO - Started process (PID=50053) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:47:59.395+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:47:59.397+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:47:59.397+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:47:59.406+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:47:59.670+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:47:59.669+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:47:59.676+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:47:59.676+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:47:59.697+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.309 seconds
+[2025-09-05T11:49:14.127+0545] {processor.py:186} INFO - Started process (PID=50868) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:49:14.130+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:49:14.133+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:49:14.133+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:49:14.143+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:49:14.160+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:49:14.160+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:49:14.173+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:49:14.172+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:49:14.200+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T11:50:00.631+0545] {processor.py:186} INFO - Started process (PID=51222) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:50:00.634+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:50:00.637+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:50:00.636+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:50:00.646+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:50:00.665+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:50:00.664+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:50:00.677+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:50:00.676+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:50:00.703+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:50:34.570+0545] {processor.py:186} INFO - Started process (PID=51473) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:50:34.573+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:50:34.576+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:50:34.576+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:50:34.585+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:50:34.602+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:50:34.601+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:50:34.614+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:50:34.613+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:50:34.641+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:51:09.552+0545] {processor.py:186} INFO - Started process (PID=51750) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:51:09.554+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:51:09.557+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:51:09.557+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:51:09.567+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:51:09.584+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:51:09.584+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:51:09.597+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:51:09.596+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:51:09.623+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:51:42.600+0545] {processor.py:186} INFO - Started process (PID=51997) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:51:42.603+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:51:42.606+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:51:42.605+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:51:42.615+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:51:42.632+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:51:42.632+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:51:42.644+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:51:42.644+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:51:42.671+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:52:13.374+0545] {processor.py:186} INFO - Started process (PID=52213) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:52:13.378+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:52:13.380+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:52:13.380+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:52:13.390+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:52:13.407+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:52:13.406+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:52:13.419+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:52:13.419+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:52:13.446+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T11:52:46.673+0545] {processor.py:186} INFO - Started process (PID=52442) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:52:46.676+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:52:46.679+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:52:46.679+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:52:46.688+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:52:46.705+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:52:46.705+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:52:46.717+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:52:46.717+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:52:46.744+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:53:48.541+0545] {processor.py:186} INFO - Started process (PID=52916) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:53:48.544+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:53:48.547+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:53:48.547+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:53:48.557+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:53:48.574+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:53:48.574+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:53:48.586+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:53:48.586+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:53:48.613+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T11:54:51.874+0545] {processor.py:186} INFO - Started process (PID=53411) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:54:51.877+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:54:51.879+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:54:51.879+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:54:51.891+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:54:51.908+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:54:51.908+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:54:51.920+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:54:51.919+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:54:51.945+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:55:23.681+0545] {processor.py:186} INFO - Started process (PID=53644) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:55:23.684+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:55:23.686+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:55:23.686+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:55:23.696+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:55:23.712+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:55:23.712+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:55:23.724+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:55:23.724+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:55:23.750+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.076 seconds
+[2025-09-05T11:56:25.951+0545] {processor.py:186} INFO - Started process (PID=54134) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:56:25.954+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:56:25.956+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:56:25.956+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:56:25.965+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:56:25.983+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:56:25.983+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:56:25.995+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:56:25.995+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:56:26.022+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T11:56:58.648+0545] {processor.py:186} INFO - Started process (PID=54357) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:56:58.650+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:56:58.653+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:56:58.652+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:56:58.663+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:56:58.680+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:56:58.679+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:56:58.692+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:56:58.692+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:56:58.720+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T11:57:59.994+0545] {processor.py:186} INFO - Started process (PID=54821) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:57:59.996+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:57:59.999+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:57:59.999+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:58:00.011+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:58:00.032+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:58:00.031+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:58:00.044+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:58:00.044+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:58:00.070+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.084 seconds
+[2025-09-05T11:59:01.468+0545] {processor.py:186} INFO - Started process (PID=55263) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:59:01.470+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:59:01.473+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:59:01.472+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:59:01.482+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:59:01.498+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:59:01.498+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:59:01.510+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:59:01.510+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:59:01.536+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.075 seconds
+[2025-09-05T11:59:32.478+0545] {processor.py:186} INFO - Started process (PID=55502) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:59:32.481+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T11:59:32.483+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:59:32.483+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:59:32.493+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T11:59:32.509+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:59:32.509+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T11:59:32.522+0545] {logging_mixin.py:190} INFO - [2025-09-05T11:59:32.521+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T11:59:32.547+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.075 seconds
+[2025-09-05T12:00:04.495+0545] {processor.py:186} INFO - Started process (PID=55736) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:00:04.498+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:00:04.500+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:00:04.500+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:00:04.510+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:00:04.526+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:00:04.526+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:00:04.539+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:00:04.538+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:00:04.566+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T12:01:04.465+0545] {processor.py:186} INFO - Started process (PID=56233) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:01:04.467+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:01:04.470+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:01:04.470+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:01:04.479+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:01:04.496+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:01:04.496+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:01:04.508+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:01:04.508+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:01:04.536+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.078 seconds
+[2025-09-05T12:02:01.546+0545] {processor.py:186} INFO - Started process (PID=56774) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:02:01.548+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:02:01.551+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:02:01.551+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:02:01.561+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:02:01.578+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:02:01.578+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:02:01.591+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:02:01.590+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:02:01.618+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T12:02:33.854+0545] {processor.py:186} INFO - Started process (PID=56999) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:02:33.857+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:02:33.859+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:02:33.859+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:02:33.869+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:02:33.887+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:02:33.887+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:02:33.899+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:02:33.899+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:02:33.926+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T12:03:09.247+0545] {processor.py:186} INFO - Started process (PID=57244) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:03:09.250+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:03:09.253+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:03:09.252+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:03:09.266+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:03:09.289+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:03:09.289+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:03:09.306+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:03:09.305+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:03:09.350+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.115 seconds
+[2025-09-05T12:03:42.810+0545] {processor.py:186} INFO - Started process (PID=57506) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:03:42.813+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:03:42.815+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:03:42.815+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:03:42.825+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:03:42.917+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:03:42.917+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:03:42.926+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:03:42.926+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:03:42.957+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.153 seconds
+[2025-09-05T12:04:15.128+0545] {processor.py:186} INFO - Started process (PID=57713) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:04:15.131+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:04:15.134+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:04:15.133+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:04:15.144+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:04:15.162+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:04:15.162+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:04:15.175+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:04:15.175+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:04:15.201+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.081 seconds
+[2025-09-05T12:04:46.108+0545] {processor.py:186} INFO - Started process (PID=57955) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:04:46.110+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:04:46.113+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:04:46.113+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:04:46.123+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:04:46.140+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:04:46.140+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:04:46.154+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:04:46.153+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:04:46.180+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T12:05:18.970+0545] {processor.py:186} INFO - Started process (PID=58180) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:05:18.972+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:05:18.975+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:05:18.974+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:05:18.986+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:05:19.089+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:05:19.088+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:05:19.103+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:05:19.103+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:05:19.134+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.173 seconds
+[2025-09-05T12:09:13.214+0545] {processor.py:186} INFO - Started process (PID=59836) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:09:13.216+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:09:13.217+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:09:13.217+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:09:13.224+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:09:13.365+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:09:13.365+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:09:13.371+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:09:13.370+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:09:13.390+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.180 seconds
+[2025-09-05T12:10:26.936+0545] {processor.py:186} INFO - Started process (PID=60761) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:10:26.939+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:10:26.941+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:10:26.941+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:10:26.950+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:10:26.964+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:10:26.963+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:10:26.974+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:10:26.974+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:10:26.998+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.069 seconds
+[2025-09-05T12:12:00.028+0545] {processor.py:186} INFO - Started process (PID=61798) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:12:00.031+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:12:00.033+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:12:00.033+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:12:00.045+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:12:00.065+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:12:00.065+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:12:00.078+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:12:00.077+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:12:00.103+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.084 seconds
+[2025-09-05T12:12:51.499+0545] {processor.py:186} INFO - Started process (PID=62222) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:12:51.502+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:12:51.505+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:12:51.505+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:12:51.515+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:12:51.533+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:12:51.532+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:12:51.545+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:12:51.545+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:12:51.571+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T12:13:25.022+0545] {processor.py:186} INFO - Started process (PID=62447) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:13:25.025+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:13:25.027+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:13:25.027+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:13:25.038+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:13:25.057+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:13:25.057+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:13:25.069+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:13:25.069+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:13:25.094+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.079 seconds
+[2025-09-05T12:17:50.513+0545] {processor.py:186} INFO - Started process (PID=64328) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:17:50.515+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:17:50.517+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:17:50.517+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:17:50.524+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:17:50.540+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:17:50.539+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:17:50.549+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:17:50.549+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:17:50.569+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.062 seconds
+[2025-09-05T12:18:59.860+0545] {processor.py:186} INFO - Started process (PID=64901) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:18:59.862+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:18:59.863+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:18:59.863+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:18:59.871+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:18:59.887+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:18:59.887+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:18:59.895+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:18:59.895+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:18:59.914+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.059 seconds
+[2025-09-05T12:19:35.281+0545] {processor.py:186} INFO - Started process (PID=65160) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:19:35.283+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:19:35.284+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:19:35.284+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:19:35.291+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:19:35.300+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:19:35.300+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:19:35.307+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:19:35.307+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:19:35.324+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.048 seconds
+[2025-09-05T12:20:34.835+0545] {processor.py:186} INFO - Started process (PID=65552) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:20:34.836+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:20:34.837+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:20:34.837+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:20:34.842+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:20:34.853+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:20:34.852+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:20:34.860+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:20:34.860+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:20:34.877+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.046 seconds
+[2025-09-05T12:21:40.047+0545] {processor.py:186} INFO - Started process (PID=66057) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:21:40.051+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:21:40.052+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:21:40.052+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:21:40.061+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:21:40.079+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:21:40.078+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:21:40.088+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:21:40.088+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:21:40.107+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.066 seconds
+[2025-09-05T12:24:01.397+0545] {processor.py:186} INFO - Started process (PID=68625) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:24:01.399+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:24:01.400+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:24:01.400+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:24:01.407+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:24:01.417+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:24:01.417+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:24:01.425+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:24:01.424+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:24:01.441+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.049 seconds
+[2025-09-05T12:24:59.993+0545] {processor.py:186} INFO - Started process (PID=69169) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:24:59.994+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:24:59.996+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:24:59.996+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:25:00.001+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:25:00.012+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:25:00.012+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:25:00.018+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:25:00.018+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:25:00.033+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.044 seconds
+[2025-09-05T12:25:59.691+0545] {processor.py:186} INFO - Started process (PID=69577) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:25:59.692+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:25:59.694+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:25:59.694+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:25:59.701+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:25:59.711+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:25:59.711+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:25:59.719+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:25:59.719+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:25:59.737+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.051 seconds
+[2025-09-05T12:27:00.320+0545] {processor.py:186} INFO - Started process (PID=70029) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:27:00.322+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:27:00.323+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:27:00.323+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:27:00.328+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:27:00.337+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:27:00.337+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:27:00.344+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:27:00.344+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:27:00.361+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.045 seconds
+[2025-09-05T12:27:56.944+0545] {processor.py:186} INFO - Started process (PID=70437) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:27:56.945+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:27:56.946+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:27:56.946+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:27:56.951+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:27:56.961+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:27:56.960+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:27:56.967+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:27:56.967+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:27:56.984+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.044 seconds
+[2025-09-05T12:28:54.177+0545] {processor.py:186} INFO - Started process (PID=70856) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:28:54.179+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T12:28:54.180+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:28:54.179+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:28:54.186+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T12:28:54.197+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:28:54.197+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T12:28:54.206+0545] {logging_mixin.py:190} INFO - [2025-09-05T12:28:54.206+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T12:28:54.225+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.052 seconds
+[2025-09-05T13:46:14.168+0545] {processor.py:186} INFO - Started process (PID=9604) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T13:46:14.172+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T13:46:14.174+0545] {logging_mixin.py:190} INFO - [2025-09-05T13:46:14.174+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T13:46:14.182+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T13:46:14.203+0545] {logging_mixin.py:190} INFO - [2025-09-05T13:46:14.203+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T13:46:14.216+0545] {logging_mixin.py:190} INFO - [2025-09-05T13:46:14.216+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T13:46:14.244+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.080 seconds
+[2025-09-05T13:49:08.055+0545] {processor.py:186} INFO - Started process (PID=12631) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T13:49:08.057+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T13:49:08.059+0545] {logging_mixin.py:190} INFO - [2025-09-05T13:49:08.059+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T13:49:08.066+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T13:49:08.078+0545] {logging_mixin.py:190} INFO - [2025-09-05T13:49:08.077+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T13:49:08.085+0545] {logging_mixin.py:190} INFO - [2025-09-05T13:49:08.085+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T13:49:08.108+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.058 seconds
+[2025-09-05T13:50:01.029+0545] {processor.py:186} INFO - Started process (PID=13029) to work on /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T13:50:01.033+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/bash_operator.py for tasks to queue
+[2025-09-05T13:50:01.035+0545] {logging_mixin.py:190} INFO - [2025-09-05T13:50:01.034+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T13:50:01.041+0545] {processor.py:925} INFO - DAG(s) 'start_diabetes_stack' retrieved from /home/ashok/mlops_project/airflow/dags/bash_operator.py
+[2025-09-05T13:50:01.053+0545] {logging_mixin.py:190} INFO - [2025-09-05T13:50:01.053+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-05T13:50:01.061+0545] {logging_mixin.py:190} INFO - [2025-09-05T13:50:01.061+0545] {dag.py:4180} INFO - Setting next_dagrun for start_diabetes_stack to None, run_after=None
+[2025-09-05T13:50:01.083+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/bash_operator.py took 0.058 seconds

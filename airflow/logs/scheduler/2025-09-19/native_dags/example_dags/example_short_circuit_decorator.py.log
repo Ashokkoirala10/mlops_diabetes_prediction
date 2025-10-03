@@ -1,0 +1,7 @@
+[2025-09-19T15:47:37.973+0545] {processor.py:186} INFO - Started process (PID=13187) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-19T15:47:37.974+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py for tasks to queue
+[2025-09-19T15:47:37.975+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:47:37.975+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-19T15:47:37.981+0545] {processor.py:925} INFO - DAG(s) 'example_short_circuit_decorator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-19T15:47:37.992+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:47:37.991+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-19T15:47:37.998+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:47:37.998+0545] {dag.py:4180} INFO - Setting next_dagrun for example_short_circuit_decorator to None, run_after=None
+[2025-09-19T15:47:38.016+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_decorator.py took 0.046 seconds

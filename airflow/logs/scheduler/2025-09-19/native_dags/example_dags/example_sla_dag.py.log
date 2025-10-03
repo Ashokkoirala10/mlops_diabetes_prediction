@@ -1,0 +1,7 @@
+[2025-09-19T15:47:58.159+0545] {processor.py:186} INFO - Started process (PID=13475) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-09-19T15:47:58.160+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-09-19T15:47:58.161+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:47:58.161+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-09-19T15:47:58.167+0545] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-09-19T15:47:58.176+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:47:58.176+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-19T15:47:58.187+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:47:58.187+0545] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-09-19 10:00:00+00:00, run_after=2025-09-19 10:02:00+00:00
+[2025-09-19T15:47:58.203+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_sla_dag.py took 0.048 seconds

@@ -1,0 +1,15 @@
+[2025-09-01T20:40:24.896+0545] {processor.py:186} INFO - Started process (PID=150938) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-09-01T20:40:24.897+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_bash_decorator.py for tasks to queue
+[2025-09-01T20:40:24.899+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:24.899+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-09-01T20:40:24.916+0545] {processor.py:925} INFO - DAG(s) 'example_bash_decorator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-09-01T20:40:25.037+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:25.036+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_bash_decorator
+[2025-09-01T20:40:25.056+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:25.055+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_bash_decorator
+[2025-09-01T20:40:25.069+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:25.069+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_bash_decorator
+[2025-09-01T20:40:25.091+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:25.091+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_bash_decorator
+[2025-09-01T20:40:25.104+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:25.104+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_bash_decorator
+[2025-09-01T20:40:25.117+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:25.116+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_bash_decorator
+[2025-09-01T20:40:25.129+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:25.129+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_bash_decorator
+[2025-09-01T20:40:25.130+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:25.129+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:25.140+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:25.140+0545] {dag.py:3262} INFO - Creating ORM DAG for example_bash_decorator
+[2025-09-01T20:40:25.140+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:25.140+0545] {dag.py:4180} INFO - Setting next_dagrun for example_bash_decorator to None, run_after=None
+[2025-09-01T20:40:25.162+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_bash_decorator.py took 0.274 seconds

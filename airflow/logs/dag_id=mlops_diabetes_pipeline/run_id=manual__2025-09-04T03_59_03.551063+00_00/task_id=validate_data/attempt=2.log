@@ -1,0 +1,109 @@
+[2025-09-04T09:46:21.757+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-04T09:46:21.764+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.validate_data manual__2025-09-04T03:59:03.551063+00:00 [queued]>
+[2025-09-04T09:46:21.769+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.validate_data manual__2025-09-04T03:59:03.551063+00:00 [queued]>
+[2025-09-04T09:46:21.769+0545] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-09-04T09:46:21.784+0545] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): validate_data> on 2025-09-04 03:59:03.551063+00:00
+[2025-09-04T09:46:21.796+0545] {standard_task_runner.py:72} INFO - Started process 28681 to run task
+[2025-09-04T09:46:21.800+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'mlops_diabetes_pipeline', 'validate_data', 'manual__2025-09-04T03:59:03.551063+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/mlops_diabetes_pipeline.py', '--cfg-path', '/tmp/tmp5v_vwwk6']
+[2025-09-04T09:46:21.801+0545] {standard_task_runner.py:105} INFO - Job 20: Subtask validate_data
+[2025-09-04T09:46:21.832+0545] {task_command.py:467} INFO - Running <TaskInstance: mlops_diabetes_pipeline.validate_data manual__2025-09-04T03:59:03.551063+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-04T09:46:21.870+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='koiralaashok02@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='mlops_diabetes_pipeline' AIRFLOW_CTX_TASK_ID='validate_data' AIRFLOW_CTX_EXECUTION_DATE='2025-09-04T03:59:03.551063+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-04T03:59:03.551063+00:00'
+[2025-09-04T09:46:21.872+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-04T09:46:21.872+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-04T09:46:21.872+0545] {logging_mixin.py:190} INFO - Current task name:validate_data state:running start_date:2025-09-04 04:01:21.765022+00:00
+[2025-09-04T09:46:21.872+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline and current dag run status:running
+[2025-09-04T09:46:21.872+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-04T09:46:21.901+0545] {file_data_context.py:222} INFO - FileDataContext loading fluent config
+[2025-09-04T09:46:21.902+0545] {config.py:187} INFO - Loading 'datasources' ->
+[]
+[2025-09-04T09:46:21.934+0545] {logging_mixin.py:190} INFO - ℹ️ Datasource 'diabetes_mysql' already exists.
+[2025-09-04T09:46:21.935+0545] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 172, in validate_data
+    context.get_expectation_suite(suite_name)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/great_expectations/data_context/data_context/abstract_data_context.py", line 3033, in get_expectation_suite
+    raise gx_exceptions.DataContextError(
+great_expectations.exceptions.exceptions.DataContextError: expectation_suite diabetes_raw_suite not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 175, in validate_data
+    context.create_expectation_suite(expectation_suite_name=suite_name, overwrite_existing=True)
+AttributeError: 'FileDataContext' object has no attribute 'create_expectation_suite'
+[2025-09-04T09:46:21.939+0545] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-09-04T09:46:21.939+0545] {logging_mixin.py:190} INFO - Task start:2025-09-04 04:01:21.765022+00:00 end:2025-09-04 04:01:21.939383+00:00 duration:0.174361
+[2025-09-04T09:46:21.940+0545] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): validate_data> dag:<DAG: mlops_diabetes_pipeline> dagrun:<DagRun mlops_diabetes_pipeline @ 2025-09-04 03:59:03.551063+00:00: manual__2025-09-04T03:59:03.551063+00:00, state:running, queued_at: 2025-09-04 03:59:03.584168+00:00. externally triggered: True>
+[2025-09-04T09:46:21.940+0545] {logging_mixin.py:190} INFO - Failure caused by 'FileDataContext' object has no attribute 'create_expectation_suite'
+[2025-09-04T09:46:21.940+0545] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=mlops_diabetes_pipeline, task_id=validate_data, run_id=manual__2025-09-04T03:59:03.551063+00:00, execution_date=20250904T035903, start_date=20250904T040121, end_date=20250904T040121
+[2025-09-04T09:46:21.948+0545] {base.py:84} INFO - Retrieving connection 'smtp_default'
+[2025-09-04T09:46:21.948+0545] {email.py:272} INFO - Email alerting: attempt 1
+[2025-09-04T09:46:25.672+0545] {email.py:283} INFO - Sent an alert email to ['koiralaashok02@gmail.com']
+[2025-09-04T09:46:29.514+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-04T09:46:29.515+0545] {standard_task_runner.py:124} ERROR - Failed to execute job 20 for task validate_data ('FileDataContext' object has no attribute 'create_expectation_suite'; 28681)
+Traceback (most recent call last):
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 172, in validate_data
+    context.get_expectation_suite(suite_name)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/great_expectations/data_context/data_context/abstract_data_context.py", line 3033, in get_expectation_suite
+    raise gx_exceptions.DataContextError(
+great_expectations.exceptions.exceptions.DataContextError: expectation_suite diabetes_raw_suite not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 175, in validate_data
+    context.create_expectation_suite(expectation_suite_name=suite_name, overwrite_existing=True)
+AttributeError: 'FileDataContext' object has no attribute 'create_expectation_suite'
+[2025-09-04T09:46:29.570+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-09-04T09:46:29.585+0545] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-04T09:46:29.594+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

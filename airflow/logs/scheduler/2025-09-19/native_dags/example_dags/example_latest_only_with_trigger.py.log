@@ -1,0 +1,7 @@
+[2025-09-19T15:48:34.018+0545] {processor.py:186} INFO - Started process (PID=13881) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-09-19T15:48:34.019+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2025-09-19T15:48:34.020+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:34.020+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-09-19T15:48:34.025+0545] {processor.py:925} INFO - DAG(s) 'latest_only_with_trigger' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-09-19T15:48:34.033+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:34.033+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-19T15:48:34.047+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:34.047+0545] {dag.py:4180} INFO - Setting next_dagrun for latest_only_with_trigger to 2025-09-19 04:00:00+00:00, run_after=2025-09-19 08:00:00+00:00
+[2025-09-19T15:48:34.064+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.049 seconds

@@ -1,0 +1,84 @@
+[2025-09-14T09:24:58.105+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-14T09:24:58.111+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.start_docker manual__2025-09-14T03:37:40.975248+00:00 [queued]>
+[2025-09-14T09:24:58.114+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.start_docker manual__2025-09-14T03:37:40.975248+00:00 [queued]>
+[2025-09-14T09:24:58.114+0545] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-09-14T09:24:58.128+0545] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): start_docker> on 2025-09-14 03:37:40.975248+00:00
+[2025-09-14T09:24:58.150+0545] {standard_task_runner.py:72} INFO - Started process 24037 to run task
+[2025-09-14T09:24:58.155+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'mlops_diabetes_pipeline', 'start_docker', 'manual__2025-09-14T03:37:40.975248+00:00', '--job-id', '633', '--raw', '--subdir', 'DAGS_FOLDER/mlops_diabetes_pipeline.py', '--cfg-path', '/tmp/tmpqtudsywe']
+[2025-09-14T09:24:58.156+0545] {standard_task_runner.py:105} INFO - Job 633: Subtask start_docker
+[2025-09-14T09:24:58.186+0545] {task_command.py:467} INFO - Running <TaskInstance: mlops_diabetes_pipeline.start_docker manual__2025-09-14T03:37:40.975248+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-14T09:24:58.227+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='koiralaashok02@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='mlops_diabetes_pipeline' AIRFLOW_CTX_TASK_ID='start_docker' AIRFLOW_CTX_EXECUTION_DATE='2025-09-14T03:37:40.975248+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-14T03:37:40.975248+00:00'
+[2025-09-14T09:24:58.228+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-14T09:24:58.228+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-14T09:24:58.228+0545] {logging_mixin.py:190} INFO - Current task name:start_docker state:running start_date:2025-09-14 03:39:58.111187+00:00
+[2025-09-14T09:24:58.228+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline and current dag run status:running
+[2025-09-14T09:24:58.228+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-14T09:24:58.228+0545] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-09-14T09:24:58.229+0545] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'docker start mcs_container || docker run -d --name mcs_container -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mariadb:latest']
+[2025-09-14T09:24:58.248+0545] {subprocess.py:99} INFO - Output:
+[2025-09-14T09:24:58.492+0545] {subprocess.py:106} INFO - Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint mcs_container (9bfe998bf3271fe9c7ec9304e1e1053fc49e45418fdaf5d4d4f9c33202595e55): Bind for :::3306 failed: port is already allocated
+[2025-09-14T09:24:58.493+0545] {subprocess.py:106} INFO - Error: failed to start containers: mcs_container
+[2025-09-14T09:24:58.508+0545] {subprocess.py:106} INFO - docker: Error response from daemon: Conflict. The container name "/mcs_container" is already in use by container "944bf0d5781c7fb940495c9c8a71029c31b5429372350d601cd660bc5716a042". You have to remove (or rename) that container to be able to reuse that name.
+[2025-09-14T09:24:58.508+0545] {subprocess.py:106} INFO - 
+[2025-09-14T09:24:58.508+0545] {subprocess.py:106} INFO - Run 'docker run --help' for more information
+[2025-09-14T09:24:58.510+0545] {subprocess.py:110} INFO - Command exited with return code 125
+[2025-09-14T09:24:58.515+0545] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 125.
+[2025-09-14T09:24:58.516+0545] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-09-14T09:24:58.516+0545] {logging_mixin.py:190} INFO - Task start:2025-09-14 03:39:58.111187+00:00 end:2025-09-14 03:39:58.516313+00:00 duration:0.405126
+[2025-09-14T09:24:58.516+0545] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): start_docker> dag:<DAG: mlops_diabetes_pipeline> dagrun:<DagRun mlops_diabetes_pipeline @ 2025-09-14 03:37:40.975248+00:00: manual__2025-09-14T03:37:40.975248+00:00, state:running, queued_at: 2025-09-14 03:37:40.984989+00:00. externally triggered: True>
+[2025-09-14T09:24:58.517+0545] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 125.
+[2025-09-14T09:24:58.517+0545] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=mlops_diabetes_pipeline, task_id=start_docker, run_id=manual__2025-09-14T03:37:40.975248+00:00, execution_date=20250914T033740, start_date=20250914T033958, end_date=20250914T033958
+[2025-09-14T09:24:58.525+0545] {base.py:84} INFO - Retrieving connection 'smtp_default'
+[2025-09-14T09:24:58.525+0545] {email.py:272} INFO - Email alerting: attempt 1
+[2025-09-14T09:25:30.451+0545] {email.py:283} INFO - Sent an alert email to ['koiralaashok02@gmail.com']
+[2025-09-14T09:25:32.566+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-14T09:25:32.566+0545] {standard_task_runner.py:124} ERROR - Failed to execute job 633 for task start_docker (Bash command failed. The command returned a non-zero exit code 125.; 24037)
+Traceback (most recent call last):
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 125.
+[2025-09-14T09:25:32.593+0545] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-09-14T09:25:32.605+0545] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-14T09:25:32.614+0545] {local_task_job_runner.py:245} INFO - ::endgroup::

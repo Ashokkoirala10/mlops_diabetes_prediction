@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/316788938642533833/9b3b5c92737a40f6964bf205947ecbca/artifacts
+end_time: 1758276184374
+entry_point_name: ''
+experiment_id: '316788938642533833'
+lifecycle_stage: active
+run_id: 9b3b5c92737a40f6964bf205947ecbca
+run_name: xgb_20250919_154802
+run_uuid: 9b3b5c92737a40f6964bf205947ecbca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758276182087
+status: 3
+tags: []
+user_id: ashok

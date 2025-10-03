@@ -1,0 +1,36 @@
+[2025-09-19T15:46:41.548+0545] {processor.py:186} INFO - Started process (PID=11207) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-19T15:46:41.548+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-19T15:46:41.549+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:46:41.549+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-19T15:46:43.533+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:46:43.533+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/analyzers/__init__.py:3: UserWarning: analyzers are deprecated, use metrics instead
+  warnings.warn("analyzers are deprecated, use metrics instead")
+[2025-09-19T15:46:43.718+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:46:43.718+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/dashboard/__init__.py:8: UserWarning:
+
+dashboards are deprecated, use metrics instead
+[2025-09-19T15:46:43.721+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:46:43.721+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/model_profile/__init__.py:8: UserWarning:
+
+model profiles are deprecated, use metrics instead
+[2025-09-19T15:46:43.722+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:46:43.722+0545] {warnings.py:109} WARNING - /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py:563: RemovedInAirflow3Warning:
+
+Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2025-09-19T15:46:43.728+0545] {processor.py:925} INFO - DAG(s) 'mlops_diabetes_pipeline' retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-19T15:46:43.741+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:46:43.741+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-19T15:46:43.751+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:46:43.751+0545] {dag.py:4180} INFO - Setting next_dagrun for mlops_diabetes_pipeline to 2025-09-01 00:00:00+00:00, run_after=2025-10-01 00:00:00+00:00
+[2025-09-19T15:46:43.767+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 2.223 seconds
+[2025-09-19T15:48:52.441+0545] {processor.py:186} INFO - Started process (PID=14018) to work on /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-19T15:48:52.443+0545] {processor.py:914} INFO - Processing file /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py for tasks to queue
+[2025-09-19T15:48:52.445+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:52.444+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-19T15:48:53.785+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:53.784+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/analyzers/__init__.py:3: UserWarning: analyzers are deprecated, use metrics instead
+  warnings.warn("analyzers are deprecated, use metrics instead")
+[2025-09-19T15:48:53.886+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:53.886+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/dashboard/__init__.py:8: UserWarning:
+
+dashboards are deprecated, use metrics instead
+[2025-09-19T15:48:53.887+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:53.887+0545] {warnings.py:109} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/evidently/model_profile/__init__.py:8: UserWarning:
+
+model profiles are deprecated, use metrics instead
+[2025-09-19T15:48:53.888+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:53.888+0545] {warnings.py:109} WARNING - /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py:563: RemovedInAirflow3Warning:
+
+Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2025-09-19T15:48:53.892+0545] {processor.py:925} INFO - DAG(s) 'mlops_diabetes_pipeline' retrieved from /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py
+[2025-09-19T15:48:53.899+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:53.898+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-19T15:48:53.907+0545] {logging_mixin.py:190} INFO - [2025-09-19T15:48:53.907+0545] {dag.py:4180} INFO - Setting next_dagrun for mlops_diabetes_pipeline to 2025-09-01 00:00:00+00:00, run_after=2025-10-01 00:00:00+00:00
+[2025-09-19T15:48:53.923+0545] {processor.py:208} INFO - Processing /home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py took 1.486 seconds

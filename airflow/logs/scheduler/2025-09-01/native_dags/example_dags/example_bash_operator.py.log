@@ -1,0 +1,15 @@
+[2025-09-01T20:40:22.290+0545] {processor.py:186} INFO - Started process (PID=150905) to work on /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2025-09-01T20:40:22.291+0545] {processor.py:914} INFO - Processing file /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2025-09-01T20:40:22.292+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:22.292+0545] {dagbag.py:588} INFO - Filling up the DagBag from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2025-09-01T20:40:22.301+0545] {processor.py:925} INFO - DAG(s) 'example_bash_operator' retrieved from /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2025-09-01T20:40:22.373+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:22.372+0545] {override.py:1901} INFO - Created Permission View: can read on DAG:example_bash_operator
+[2025-09-01T20:40:22.386+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:22.385+0545] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_bash_operator
+[2025-09-01T20:40:22.397+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:22.397+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_bash_operator
+[2025-09-01T20:40:22.417+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:22.417+0545] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_bash_operator
+[2025-09-01T20:40:22.428+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:22.427+0545] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_bash_operator
+[2025-09-01T20:40:22.439+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:22.438+0545] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_bash_operator
+[2025-09-01T20:40:22.448+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:22.448+0545] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_bash_operator
+[2025-09-01T20:40:22.448+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:22.448+0545] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-01T20:40:22.456+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:22.456+0545] {dag.py:3262} INFO - Creating ORM DAG for example_bash_operator
+[2025-09-01T20:40:22.462+0545] {logging_mixin.py:190} INFO - [2025-09-01T20:40:22.462+0545] {dag.py:4180} INFO - Setting next_dagrun for example_bash_operator to 2025-08-31 00:00:00+00:00, run_after=2025-09-01 00:00:00+00:00
+[2025-09-01T20:40:22.477+0545] {processor.py:208} INFO - Processing /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py took 0.192 seconds

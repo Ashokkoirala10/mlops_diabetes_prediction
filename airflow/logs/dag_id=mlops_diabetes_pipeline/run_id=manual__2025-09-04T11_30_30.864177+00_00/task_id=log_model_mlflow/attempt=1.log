@@ -1,0 +1,128 @@
+[2025-09-04T17:21:44.962+0545] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-04T17:21:44.968+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.log_model_mlflow manual__2025-09-04T11:30:30.864177+00:00 [queued]>
+[2025-09-04T17:21:44.971+0545] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlops_diabetes_pipeline.log_model_mlflow manual__2025-09-04T11:30:30.864177+00:00 [queued]>
+[2025-09-04T17:21:44.971+0545] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-09-04T17:21:44.983+0545] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): log_model_mlflow> on 2025-09-04 11:30:30.864177+00:00
+[2025-09-04T17:21:44.995+0545] {standard_task_runner.py:72} INFO - Started process 120142 to run task
+[2025-09-04T17:21:44.998+0545] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'mlops_diabetes_pipeline', 'log_model_mlflow', 'manual__2025-09-04T11:30:30.864177+00:00', '--job-id', '236', '--raw', '--subdir', 'DAGS_FOLDER/mlops_diabetes_pipeline.py', '--cfg-path', '/tmp/tmpg_e8nj7m']
+[2025-09-04T17:21:44.999+0545] {standard_task_runner.py:105} INFO - Job 236: Subtask log_model_mlflow
+[2025-09-04T17:21:45.025+0545] {task_command.py:467} INFO - Running <TaskInstance: mlops_diabetes_pipeline.log_model_mlflow manual__2025-09-04T11:30:30.864177+00:00 [running]> on host ashok-Nitro-ANV16-41
+[2025-09-04T17:21:45.067+0545] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='koiralaashok02@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='mlops_diabetes_pipeline' AIRFLOW_CTX_TASK_ID='log_model_mlflow' AIRFLOW_CTX_EXECUTION_DATE='2025-09-04T11:30:30.864177+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-04T11:30:30.864177+00:00'
+[2025-09-04T17:21:45.068+0545] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-04T17:21:45.068+0545] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-04T17:21:45.068+0545] {logging_mixin.py:190} INFO - Current task name:log_model_mlflow state:running start_date:2025-09-04 11:36:44.968575+00:00
+[2025-09-04T17:21:45.068+0545] {logging_mixin.py:190} INFO - Dag name:mlops_diabetes_pipeline and current dag run status:running
+[2025-09-04T17:21:45.068+0545] {taskinstance.py:732} INFO - ::endgroup::
+[2025-09-04T17:21:45.360+0545] {logging_mixin.py:190} WARNING - /home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/sklearn/metrics/_plot/confusion_matrix.py:136 UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+[2025-09-04T17:21:45.557+0545] {connectionpool.py:827} WARNING - Retrying (JitteredRetry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bf10029c370>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=diabetes_mlops_experiment
+[2025-09-04T17:21:49.561+0545] {connectionpool.py:827} WARNING - Retrying (JitteredRetry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bf10029c0a0>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=diabetes_mlops_experiment
+[2025-09-04T17:21:57.570+0545] {connectionpool.py:827} WARNING - Retrying (JitteredRetry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bf1002bc550>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=diabetes_mlops_experiment
+[2025-09-04T17:22:13.587+0545] {connectionpool.py:827} WARNING - Retrying (JitteredRetry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bf1002bc9a0>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=diabetes_mlops_experiment
+[2025-09-04T17:22:30.418+0545] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-09-04T17:22:30.418+0545] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-09-04T17:22:30.427+0545] {process_utils.py:132} INFO - Sending 15 to group 120142. PIDs of all processes in the group: [120142]
+[2025-09-04T17:22:30.428+0545] {process_utils.py:87} INFO - Sending the signal 15 to group 120142
+[2025-09-04T17:22:30.428+0545] {taskinstance.py:3094} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-09-04T17:22:30.430+0545] {taskinstance.py:3095} ERROR - Stacktrace: 
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/__main__.py", line 62, in main
+    args.func(args)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 254, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 322, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/jobs/local_task_job_runner.py", line 171, in _execute
+    self.task_runner.start()
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/task/task_runner/standard_task_runner.py", line 55, in start
+    self.process = self._start_by_fork()
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/ashok/mlops_project/airflow/dags/mlops_diabetes_pipeline.py", line 442, in log_model_mlflow
+    mlflow.set_experiment(MLFLOW_EXPERIMENT)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/mlflow/tracking/fluent.py", line 145, in set_experiment
+    experiment = client.get_experiment_by_name(experiment_name)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/mlflow/tracking/client.py", line 1256, in get_experiment_by_name
+    return self._tracking_client.get_experiment_by_name(name)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/mlflow/tracking/_tracking_service/client.py", line 501, in get_experiment_by_name
+    return self.store.get_experiment_by_name(name)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/mlflow/store/tracking/rest_store.py", line 519, in get_experiment_by_name
+    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/mlflow/store/tracking/rest_store.py", line 82, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/mlflow/utils/rest_utils.py", line 365, in call_endpoint
+    response = http_request(**call_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/mlflow/utils/rest_utils.py", line 189, in http_request
+    return _get_http_response_with_retries(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/mlflow/utils/request_utils.py", line 237, in _get_http_response_with_retries
+    return session.request(method, url, allow_redirects=allow_redirects, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/urllib3/connectionpool.py", line 830, in urlopen
+    return self.urlopen(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/urllib3/connectionpool.py", line 830, in urlopen
+    return self.urlopen(
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/urllib3/connectionpool.py", line 830, in urlopen
+    return self.urlopen(
+  [Previous line repeated 1 more time]
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/urllib3/connectionpool.py", line 805, in urlopen
+    retries.sleep()
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/urllib3/util/retry.py", line 434, in sleep
+    self._sleep_backoff()
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/urllib3/util/retry.py", line 418, in _sleep_backoff
+    time.sleep(backoff)
+  File "/home/ashok/miniconda3/envs/mysecondenvironment/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    self.log.error("Stacktrace: \n%s", "".join(traceback.format_stack()))
+
+[2025-09-04T17:22:30.445+0545] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-09-04T17:22:30.600+0545] {process_utils.py:80} INFO - Process psutil.Process(pid=120142, status='terminated', exitcode=0, started='17:21:44') (120142) terminated with exit code 0
