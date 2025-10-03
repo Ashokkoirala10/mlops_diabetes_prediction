@@ -1,3 +1,6 @@
+This project is an end-to-end MLOps pipeline designed for Diabetes Prediction.  
+It integrates data engineering, machine learning, experiment tracking, deployment, and monitoring into one ecosystem.  
+The workflow leverages Dockerized databases (MariaDB ColumnStore, Redis), Airflow for orchestration, Great Expectations for data validation, MLflow for experiment tracking, and Evidently AI for monitoring data and concept drift.  
 🚀 MLOps Project – Diabetes Prediction
 📌 Overview
 
